@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  waes-test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>waes-test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 07 19:22:04 ART 2019</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17893 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: WithId, {"password":"waestestpass","name":"test user170","dateOfBirth":"2018-12-12","id":29,"isAdmin":false,"email":"newtestuser155@wearewaes.com","superpower":"Kaoiken 129","username":"test-user-742"}, 404</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyName, {"password":"waestestpass","name":"","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser177@wearewaes.com","superpower":"Kaoiken 936","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyUsername, {"password":"waestestpass","name":"test user429","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser489@wearewaes.com","superpower":"Kaoiken 72","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyEmail, {"password":"waestestpass","name":"test user486","dateOfBirth":"2018-12-12","isAdmin":false,"email":"","superpower":"Kaoiken 466","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptySuperpower, {"password":"waestestpass","name":"test user204","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser627@wearewaes.com","superpower":"","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyDateOfBirth, {"password":"waestestpass","name":"test user369","dateOfBirth":"","isAdmin":false,"email":"newtestuser517@wearewaes.com","superpower":"Kaoiken 752","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyIsAdmin, {"password":"waestestpass","name":"test user939","dateOfBirth":"2018-12-12","isAdmin":"","email":"newtestuser427@wearewaes.com","superpower":"Kaoiken 342","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyPassword, {"password":"waestestpass","name":"test user723","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser190@wearewaes.com","superpower":"Kaoiken 185","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingName, {"password":"waestestpass","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser795@wearewaes.com","superpower":"Kaoiken 380","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingUsername, {"password":"waestestpass","name":"test user857","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser822@wearewaes.com","superpower":"Kaoiken 429","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingEmail, {"password":"waestestpass","name":"test user166","dateOfBirth":"2018-12-12","isAdmin":false,"superpower":"Kaoiken 690","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingSuperpower, {"password":"waestestpass","name":"test user902","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser925@wearewaes.com","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingDateOfBirth, {"password":"waestestpass","name":"test user708","isAdmin":false,"email":"newtestuser240@wearewaes.com","superpower":"Kaoiken 567","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingIsAdmin, {"password":"waestestpass","name":"test user722","dateOfBirth":"2018-12-12","email":"newtestuser374@wearewaes.com","superpower":"Kaoiken 377","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<tr>
+<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingPassword, {"password":"waestestpass","name":"test user431","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser481@wearewaes.com","superpower":"Kaoiken 596","username":"test-user-742"}, 400</td>
+<td></td>
+<td>1</td>
+<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+</table><p>
+</body>
+</html>

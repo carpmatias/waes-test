@@ -1,0 +1,2484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="10" total="54" passed="43" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[RUNNING TEST: *** deleteInvalidAuth ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** deleteNonExistingUser ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** deletePositive ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** createNewAdminUserAndGetAllUsers ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** getAllUsersInvalidAuth ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** getAllUsersPositive ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** getEmptyUser ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** getNonExistingUser ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** getUserPositive ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** createUserAndLogin ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** getLoginInvalidAuth ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** loginPositive ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpPositive ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_WithId ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyName ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyUsername ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyEmail ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptySuperpower ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyDateOfBirth ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyIsAdmin ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyPassword ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingName ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingUsername ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingEmail ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingSuperpower ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingDateOfBirth ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingIsAdmin ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingPassword ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserPositive ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_WithId ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyName ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyUsername ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyEmail ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptySuperpower ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyDateOfBirth ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyIsAdmin ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyPassword ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingName ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingUsername ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingEmail ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingSuperpower ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingDateOfBirth ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingIsAdmin ***]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingPassword ***]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2019-10-07T19:23:07 ART" name="WAES-Suite" finished-at="2019-10-07T19:23:42 ART" duration-ms="34985">
+    <groups>
+    </groups>
+    <test started-at="2019-10-07T19:23:07 ART" name="Regression" finished-at="2019-10-07T19:23:42 ART" duration-ms="34985">
+      <class name="waesqa.UpdateUserTest">
+        <test-method is-config="true" signature="setProperties()[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:25 ART" name="setProperties" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:25 ART" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setProperties -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:25 ART" name="beforeClass" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:25 ART" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="updateUserPositive()[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:25 ART" name="updateUserPositive" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:25 ART" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserPositive -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:25 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:25 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserPositive()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@749baa0c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserPositive ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:25 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:25 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserPositive status=SUCCESS method=UpdateUserTest.updateUserPositive()[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:26 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:26 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@53f7a906]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_WithId ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:26 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:27 ART" duration-ms="1079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WithId]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user537","dateOfBirth":"2018-12-12","id":125,"isAdmin":false,"email":"newtestuser826@wearewaes.com","superpower":"Kaoiken 137","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:27 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:27 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_WithId status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:27 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:27 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2154652c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyName ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:27 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:28 ART" duration-ms="1084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser497@wearewaes.com","superpower":"Kaoiken 169","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:28 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:28 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyName status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:28 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:28 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@8b670c0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyUsername ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:28 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:29 ART" duration-ms="1094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user420","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser327@wearewaes.com","superpower":"Kaoiken 214","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:29 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:29 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyUsername status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:29 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:30 ART" duration-ms="1073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user821","dateOfBirth":"2018-12-12","isAdmin":false,"email":"","superpower":"Kaoiken 364","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:29 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:29 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4c2ab536]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyEmail ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:30 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:30 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyEmail status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:30 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:30 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@22fb9a2c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptySuperpower ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:30 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:31 ART" duration-ms="1077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptySuperpower]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user794","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser765@wearewaes.com","superpower":"","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:31 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:31 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptySuperpower status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:31 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:31 ART" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2084e65a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyDateOfBirth ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:31 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:32 ART" duration-ms="1076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyDateOfBirth]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user362","dateOfBirth":"","isAdmin":false,"email":"newtestuser64@wearewaes.com","superpower":"Kaoiken 588","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:32 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:32 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyDateOfBirth status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:32 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:32 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1b8fa2fa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyIsAdmin ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:32 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:33 ART" duration-ms="1075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyIsAdmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user767","dateOfBirth":"2018-12-12","isAdmin":"","email":"newtestuser340@wearewaes.com","superpower":"Kaoiken 512","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:33 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:33 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyIsAdmin status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:33 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:33 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@21527b8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyPassword ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:33 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:34 ART" duration-ms="1076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user635","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser117@wearewaes.com","superpower":"Kaoiken 149","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:34 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:34 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyPassword status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:34 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:34 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7cc1f72c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingName ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:34 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:35 ART" duration-ms="1075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser311@wearewaes.com","superpower":"Kaoiken 716","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:35 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:36 ART" duration-ms="1076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user764","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser544@wearewaes.com","superpower":"Kaoiken 5","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:35 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:35 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7b7068d8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingUsername ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:35 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:35 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingName status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:36 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:36 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingUsername status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:36 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:36 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1d8e9d3e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingEmail ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:36 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:37 ART" duration-ms="1077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user382","dateOfBirth":"2018-12-12","isAdmin":false,"superpower":"Kaoiken 519","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:37 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:37 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingEmail status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:37 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:37 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@360d41d0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingSuperpower ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:37 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:39 ART" duration-ms="1081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingSuperpower]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user602","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser244@wearewaes.com","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:39 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:39 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingSuperpower status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:39 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:39 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4586a8aa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingDateOfBirth ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:39 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:40 ART" duration-ms="1081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingDateOfBirth]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user793","isAdmin":false,"email":"newtestuser5@wearewaes.com","superpower":"Kaoiken 949","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:40 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:40 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3dc82e6a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingIsAdmin ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:40 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:40 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingDateOfBirth status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:40 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:41 ART" duration-ms="1072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingIsAdmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user546","dateOfBirth":"2018-12-12","email":"newtestuser669@wearewaes.com","superpower":"Kaoiken 780","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:41 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:41 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingIsAdmin status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:41 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:41 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@54463380]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingPassword ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:41 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:42 ART" duration-ms="1078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user533","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser583@wearewaes.com","superpower":"Kaoiken 77","username":"test-user-283"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a]" started-at="2019-10-07T19:23:42 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:42 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingPassword status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@4b9df8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- waesqa.UpdateUserTest -->
+      <class name="waesqa.SignUpTest">
+        <test-method is-config="true" signature="setProperties()[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:09 ART" name="setProperties" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:09 ART" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setProperties -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:09 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:09 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpPositive()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@819fb19]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpPositive ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:09 ART" name="beforeClass" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="signUpPositive()[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:09 ART" name="signUpPositive" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:09 ART" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpPositive -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:09 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpPositive status=SUCCESS method=SignUpTest.signUpPositive()[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:10 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:10 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@782ac148]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_WithId ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:10 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:11 ART" duration-ms="1103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WithId]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user507","dateOfBirth":"2018-12-12","id":224,"isAdmin":false,"email":"newtestuser182@wearewaes.com","superpower":"Kaoiken 875","username":"test-user-341"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:11 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:11 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_WithId status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:11 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:11 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@46d1b59]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyName ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:11 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:12 ART" duration-ms="1099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user591","dateOfBirth":"2018-12-12","id":122,"isAdmin":false,"email":"newtestuser550@wearewaes.com","superpower":"Kaoiken 4","username":"test-user-956"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:12 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:12 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@61d2f267]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyUsername ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:12 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:12 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_EmptyName status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:12 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:13 ART" duration-ms="1098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user710","dateOfBirth":"2018-12-12","id":840,"isAdmin":false,"email":"newtestuser963@wearewaes.com","superpower":"Kaoiken 49","username":"test-user-938"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:13 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:13 ART" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_EmptyUsername status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:13 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:13 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@26d40c77]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyEmail ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:13 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:13 ART" duration-ms="32" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user284","dateOfBirth":"2018-12-12","id":200,"isAdmin":false,"email":"newtestuser833@wearewaes.com","superpower":"Kaoiken 591","username":"test-user-926"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [201] but found [403]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [201] but found [403]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at org.testng.Assert.assertEquals(Assert.java:849)
+at waesqa.SignUpTest.signUpRegressionCases(SignUpTest.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:13 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:13 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_EmptyEmail status=FAILURE method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:13 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:13 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@14874a5d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptySuperpower ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:13 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:14 ART" duration-ms="1125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptySuperpower]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user430","dateOfBirth":"2018-12-12","id":356,"isAdmin":false,"email":"newtestuser657@wearewaes.com","superpower":"Kaoiken 14","username":"test-user-763"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:14 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:14 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_EmptySuperpower status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:14 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:14 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@49cb5030]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyDateOfBirth ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:14 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:15 ART" duration-ms="1098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyDateOfBirth]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user820","dateOfBirth":"2018-12-12","id":344,"isAdmin":false,"email":"newtestuser72@wearewaes.com","superpower":"Kaoiken 856","username":"test-user-392"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:15 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:15 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_EmptyDateOfBirth status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:15 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:15 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@23c7cb18]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyIsAdmin ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:15 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:16 ART" duration-ms="1100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyIsAdmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user984","dateOfBirth":"2018-12-12","id":480,"isAdmin":false,"email":"newtestuser469@wearewaes.com","superpower":"Kaoiken 603","username":"test-user-335"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:16 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:16 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_EmptyIsAdmin status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:16 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:16 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@30fbc23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyPassword ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:16 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:17 ART" duration-ms="1095" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user978","dateOfBirth":"2018-12-12","id":664,"isAdmin":false,"email":"newtestuser991@wearewaes.com","superpower":"Kaoiken 414","username":"test-user-3"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:17 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:17 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_EmptyPassword status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:17 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:17 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2d74cbbd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingName ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:17 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:19 ART" duration-ms="1104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user688","dateOfBirth":"2018-12-12","id":180,"isAdmin":false,"email":"newtestuser242@wearewaes.com","superpower":"Kaoiken 334","username":"test-user-409"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:19 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:19 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3e2d44f3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingUsername ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:19 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:19 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_MissingName status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:19 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:20 ART" duration-ms="1099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user57","dateOfBirth":"2018-12-12","id":234,"isAdmin":false,"email":"newtestuser100@wearewaes.com","superpower":"Kaoiken 340","username":"test-user-893"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:20 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:20 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_MissingUsername status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:20 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:20 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@23afc725]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingEmail ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:20 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:21 ART" duration-ms="1127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user898","dateOfBirth":"2018-12-12","id":219,"isAdmin":false,"email":"newtestuser362@wearewaes.com","superpower":"Kaoiken 741","username":"test-user-20"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:21 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:21 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_MissingEmail status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:21 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:21 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5d3f99d7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingSuperpower ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:21 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:22 ART" duration-ms="1098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingSuperpower]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user318","dateOfBirth":"2018-12-12","id":477,"isAdmin":false,"email":"newtestuser62@wearewaes.com","superpower":"Kaoiken 869","username":"test-user-551"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:22 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:22 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_MissingSuperpower status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:22 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:22 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@561d88ee]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingDateOfBirth ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:22 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:23 ART" duration-ms="1097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingDateOfBirth]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user323","dateOfBirth":"2018-12-12","id":221,"isAdmin":false,"email":"newtestuser307@wearewaes.com","superpower":"Kaoiken 681","username":"test-user-635"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:23 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:23 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_MissingDateOfBirth status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:23 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:23 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@44384b4a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingIsAdmin ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:23 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:24 ART" duration-ms="1096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingIsAdmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user244","dateOfBirth":"2018-12-12","id":73,"isAdmin":false,"email":"newtestuser841@wearewaes.com","superpower":"Kaoiken 81","username":"test-user-699"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:24 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:24 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_MissingIsAdmin status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:24 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:24 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5cc3e49b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingPassword ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:24 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:25 ART" duration-ms="1096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"test user975","dateOfBirth":"2018-12-12","id":903,"isAdmin":false,"email":"newtestuser578@wearewaes.com","superpower":"Kaoiken 334","username":"test-user-294"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@dfddc9a]" started-at="2019-10-07T19:23:25 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T19:23:25 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpRegressionCases_MissingPassword status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@dfddc9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- waesqa.SignUpTest -->
+      <class name="waesqa.GetAllUsersTest">
+        <test-method is-config="true" signature="setProperties()[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="setProperties" finished-at="2019-10-07T19:23:08 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setProperties -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="beforeClass" finished-at="2019-10-07T19:23:08 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:08 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.GetAllUsersTest.createNewAdminUserAndGetAllUsers()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4239262e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** createNewAdminUserAndGetAllUsers ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="createNewAdminUserAndGetAllUsers()[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="createNewAdminUserAndGetAllUsers" finished-at="2019-10-07T19:23:08 ART" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewAdminUserAndGetAllUsers -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="endTest" finished-at="2019-10-07T19:23:08 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewAdminUserAndGetAllUsers status=SUCCESS method=GetAllUsersTest.createNewAdminUserAndGetAllUsers()[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:08 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.GetAllUsersTest.getAllUsersInvalidAuth()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7bec8cb0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** getAllUsersInvalidAuth ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="getAllUsersInvalidAuth()[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="getAllUsersInvalidAuth" finished-at="2019-10-07T19:23:08 ART" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersInvalidAuth -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="endTest" finished-at="2019-10-07T19:23:08 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAllUsersInvalidAuth status=SUCCESS method=GetAllUsersTest.getAllUsersInvalidAuth()[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:08 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.GetAllUsersTest.getAllUsersPositive()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7d88fa9c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** getAllUsersPositive ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="getAllUsersPositive()[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:08 ART" name="getAllUsersPositive" finished-at="2019-10-07T19:23:09 ART" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersPositive -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60]" started-at="2019-10-07T19:23:09 ART" name="endTest" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAllUsersPositive status=SUCCESS method=GetAllUsersTest.getAllUsersPositive()[pri:0, instance:waesqa.GetAllUsersTest@3fb6cf60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- waesqa.GetAllUsersTest -->
+      <class name="waesqa.LoginTest">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:09 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.LoginTest.createUserAndLogin()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3eac2e8a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** createUserAndLogin ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="beforeClass" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="setProperties()[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="setProperties" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setProperties -->
+        <test-method signature="createUserAndLogin()[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="createUserAndLogin" finished-at="2019-10-07T19:23:09 ART" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserAndLogin -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="endTest" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUserAndLogin status=SUCCESS method=LoginTest.createUserAndLogin()[pri:0, instance:waesqa.LoginTest@349c1daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.LoginTest.getLoginInvalidAuth()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@352f6727]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** getLoginInvalidAuth ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="getLoginInvalidAuth()[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="getLoginInvalidAuth" finished-at="2019-10-07T19:23:09 ART" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoginInvalidAuth -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="endTest" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getLoginInvalidAuth status=SUCCESS method=LoginTest.getLoginInvalidAuth()[pri:0, instance:waesqa.LoginTest@349c1daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method signature="loginPositive()[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="loginPositive" finished-at="2019-10-07T19:23:09 ART" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPositive -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.LoginTest.loginPositive()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2ab9e43e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** loginPositive ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.LoginTest@349c1daf]" started-at="2019-10-07T19:23:09 ART" name="endTest" finished-at="2019-10-07T19:23:09 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPositive status=SUCCESS method=LoginTest.loginPositive()[pri:0, instance:waesqa.LoginTest@349c1daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- waesqa.LoginTest -->
+      <class name="waesqa.GetUserTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="beforeClass" finished-at="2019-10-07T19:23:09 ART" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="setProperties()[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="setProperties" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setProperties -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.GetUserTest.getEmptyUser()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@10dfa7ef]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** getEmptyUser ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="getEmptyUser()[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="getEmptyUser" finished-at="2019-10-07T19:23:09 ART" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmptyUser -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="endTest" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEmptyUser status=SUCCESS method=GetUserTest.getEmptyUser()[pri:0, instance:waesqa.GetUserTest@37ddb69a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.GetUserTest.getNonExistingUser()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4fd80300]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** getNonExistingUser ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="getNonExistingUser()[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="getNonExistingUser" finished-at="2019-10-07T19:23:09 ART" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNonExistingUser -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="endTest" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getNonExistingUser status=SUCCESS method=GetUserTest.getNonExistingUser()[pri:0, instance:waesqa.GetUserTest@37ddb69a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:09 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.GetUserTest.getUserPositive()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1805383]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** getUserPositive ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="getUserPositive()[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="getUserPositive" finished-at="2019-10-07T19:23:09 ART" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserPositive -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.GetUserTest@37ddb69a]" started-at="2019-10-07T19:23:09 ART" name="endTest" finished-at="2019-10-07T19:23:09 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getUserPositive status=SUCCESS method=GetUserTest.getUserPositive()[pri:0, instance:waesqa.GetUserTest@37ddb69a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- waesqa.GetUserTest -->
+      <class name="waesqa.DeleteUserTest">
+        <test-method is-config="true" signature="before()[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:07 ART" name="before" finished-at="2019-10-07T19:23:07 ART" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="setProperties()[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:07 ART" name="setProperties" finished-at="2019-10-07T19:23:07 ART" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setProperties -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:07 ART" name="beforeClass" finished-at="2019-10-07T19:23:08 ART" duration-ms="1043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:08 ART" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.DeleteUserTest.deleteInvalidAuth()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@64fdcf99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** deleteInvalidAuth ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="deleteInvalidAuth()[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="deleteInvalidAuth" finished-at="2019-10-07T19:23:08 ART" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidAuth -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="endTest" finished-at="2019-10-07T19:23:08 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteInvalidAuth status=SUCCESS method=DeleteUserTest.deleteInvalidAuth()[pri:0, instance:waesqa.DeleteUserTest@13e547a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:08 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.DeleteUserTest.deleteNonExistingUser()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@9f0fc36]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** deleteNonExistingUser ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="deleteNonExistingUser()[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="deleteNonExistingUser" finished-at="2019-10-07T19:23:08 ART" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNonExistingUser -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="endTest" finished-at="2019-10-07T19:23:08 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteNonExistingUser status=SUCCESS method=DeleteUserTest.deleteNonExistingUser()[pri:0, instance:waesqa.DeleteUserTest@13e547a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="BeforeMethod" finished-at="2019-10-07T19:23:08 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.DeleteUserTest.deletePositive()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@63f2e0b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b3bec6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** deletePositive ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="deletePositive()[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="deletePositive" finished-at="2019-10-07T19:23:08 ART" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePositive -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:08 ART" name="endTest" finished-at="2019-10-07T19:23:08 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deletePositive status=SUCCESS method=DeleteUserTest.deletePositive()[pri:0, instance:waesqa.DeleteUserTest@13e547a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:waesqa.DeleteUserTest@13e547a9]" started-at="2019-10-07T19:23:42 ART" name="tearDownSuite" finished-at="2019-10-07T19:23:42 ART" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- waesqa.DeleteUserTest -->
+    </test> <!-- Regression -->
+  </suite> <!-- WAES-Suite -->
+</testng-results>

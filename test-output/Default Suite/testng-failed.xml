@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="waes-test(failed)">
+    <classes>
+      <class name="waesqa.UpdateUserTest">
+        <methods>
+          <include name="before"/>
+          <include name="tearDownSuite"/>
+          <include name="endTest"/>
+          <include name="beforeClass"/>
+          <include name="BeforeMethod"/>
+          <include name="updateUserPositive"/>
+          <include name="setProperties"/>
+        </methods>
+      </class> <!-- waesqa.UpdateUserTest -->
+    </classes>
+  </test> <!-- waes-test(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

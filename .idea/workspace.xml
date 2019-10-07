@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java" line="21" mnemonic="2" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ee06e88-60be-4893-873a-86a7f61a7cc6" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/DeleteUserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="685">
+              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+              <folding>
+                <element signature="method#beforeClass#0;class#DeleteUserTest#0" />
+                <element signature="method#deletePositive#0;class#DeleteUserTest#0" />
+                <element signature="e#1471#1537#0" />
+                <element signature="method#deleteNonExistingUser#0;class#DeleteUserTest#0" />
+                <element signature="method#deleteInvalidAuth#0;class#DeleteUserTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testutils/TestCasesData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetAllUsersTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
+              <folding>
+                <element signature="method#beforeClass#0;class#GetAllUsersTest#0" />
+                <element signature="method#getAllUsersPositive#0;class#GetAllUsersTest#0" />
+                <element signature="method#getAllUsersInvalidAuth#0;class#GetAllUsersTest#0" />
+                <element signature="method#getAllUsersInvalidAuth#1;class#GetAllUsersTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetUserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="40" column="53" selection-start-line="37" selection-start-column="8" selection-end-line="40" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/LoginTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="36" selection-end-column="7" />
+              <folding>
+                <element signature="method#beforeClass#0;class#LoginTest#0" />
+                <element signature="method#loginPositive#0;class#LoginTest#0" />
+                <element signature="docComment;method#loginPositive#1;class#LoginTest#0" />
+                <element signature="method#loginPositive#1;class#LoginTest#0" />
+                <element signature="docComment;method#getLoginInvalidAuth#0;class#LoginTest#0" />
+                <element signature="method#getLoginInvalidAuth#0;class#LoginTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+              <folding>
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/SignUpTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="826">
+              <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="86" selection-end-column="7" />
+              <folding>
+                <element signature="method#beforeClass#0;class#SignUpTest#0" />
+                <element signature="method#signUpCornerCases#0;class#SignUpTest#0" />
+                <element signature="e#2228#2855#1" />
+                <element signature="method#testData#0;class#SignUpTest#0" />
+                <element signature="e#2480#3221#1" />
+                <element signature="e#2601#3211#1" />
+                <element signature="e#2743#2998#1" />
+                <element signature="e#3031#3197#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/UpdateUserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1938">
+              <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testutils/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="method#setProperties#0;class#TestBase#0" />
+                <element signature="method#BeforeMethod#0;class#TestBase#0" />
+                <element signature="e#1064#1197#1" />
+                <element signature="method#endTest#0;class#TestBase#0" />
+                <element signature="e#2201#2409#1" />
+                <element signature="e#2462#2613#1" />
+                <element signature="e#2663#2754#1" />
+                <element signature="n#!!block;n#getTestName#0;n#TestBase#0" />
+                <element signature="method#tearDownSuite#0;class#TestBase#0" />
+                <element signature="method#reportLog#0;class#TestBase#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/data/env.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>set</find>
+      <find>;</find>
+      <find>put</find>
+      <find>getKeyForIndex</find>
+      <find>getDefaultKeyValue</find>
+      <find>text</find>
+      <find>parseText</find>
+      <find>INFO</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>:</replace>
+      <replace>with</replace>
+      <replace>WaesUtils.getKeyForIndex</replace>
+      <replace>WaesUtils.getDefaultKeyValue</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Varios\Entrevistas\waes-test\src\test\java\waesqa</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/WAEStests/UnitTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/waesqa/UnitTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testutils/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/waesqa/IntegrationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/WaesUtisl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/ExtentReporterNG.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/WaesProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/WaesUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testutils/CornerCasesData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/ExcelManager.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/log4j.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/testutils/IInvokedMethodListene.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testutils/WaesListener.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testutils/ExtentReporterNG.java" />
+        <option value="$PROJECT_DIR$/testng2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/data/env.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/testutils/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/waesqa/DeleteUserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/waesqa/GetAllUsersTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/waesqa/GetUserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/waesqa/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testutils/TestCasesData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/waesqa/SignUpTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/waesqa/UpdateUserTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testutils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="waesqa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570490234773" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.61326534" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Varios\Entrevistas\waes-test\src\main\resources" />
+      <recent name="D:\Varios\Entrevistas\waes-test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="utils" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="testutils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="waesqa" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Varios\Entrevistas\waes-test\src\test\java\resources" />
+      <recent name="D:\Varios\Entrevistas\waes-test\src\main\java\data" />
+      <recent name="D:\Varios\Entrevistas\waes-test\src\main\java\utils" />
+      <recent name="D:\Varios\Entrevistas\waes-test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.UpdateUserTest.updateUserRegressionCases">
+    <configuration name="D:/Varios/Entrevistas/waes-test/testng.xml" type="TestNG" nameIsGenerated="true">
+      <module name="waes-test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.createUserAndLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="waes-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="waesqa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="waesqa" />
+      <option name="MAIN_CLASS_NAME" value="waesqa.LoginTest" />
+      <option name="METHOD_NAME" value="createUserAndLogin" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginPositive" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="waes-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="waesqa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="waesqa" />
+      <option name="MAIN_CLASS_NAME" value="waesqa.LoginTest" />
+      <option name="METHOD_NAME" value="loginPositive" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTest.signUpPositive" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="waes-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="waesqa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="waesqa" />
+      <option name="MAIN_CLASS_NAME" value="waesqa.SignUpTest" />
+      <option name="METHOD_NAME" value="signUpPositive" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateUserTest" type="TestNG" nameIsGenerated="true">
+      <module name="waes-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="waesqa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="waesqa" />
+      <option name="MAIN_CLASS_NAME" value="waesqa.UpdateUserTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateUserTest.updateUserPositive" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="waes-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="waesqa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="waesqa" />
+      <option name="MAIN_CLASS_NAME" value="waesqa.UpdateUserTest" />
+      <option name="METHOD_NAME" value="updateUserPositive" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateUserTest.updateUserRegressionCases" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="waes-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="waesqa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="waesqa" />
+      <option name="MAIN_CLASS_NAME" value="waesqa.UpdateUserTest" />
+      <option name="METHOD_NAME" value="updateUserRegressionCases" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="SUITE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.UpdateUserTest.updateUserRegressionCases" />
+        <item itemvalue="TestNG.UpdateUserTest.updateUserPositive" />
+        <item itemvalue="TestNG.SignUpTest.signUpPositive" />
+        <item itemvalue="TestNG.LoginTest.createUserAndLogin" />
+        <item itemvalue="TestNG.LoginTest.loginPositive" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ee06e88-60be-4893-873a-86a7f61a7cc6" name="Default Changelist" comment="" />
+      <created>1570129048980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570129048980</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SignUpTest_signUpPositive - 2019.10.07 at 18h 58m 11s.xml">
+      <configuration name="SignUpTest.signUpPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SignUpTest_signUpPositive - 2019.10.07 at 18h 58m 18s.xml">
+      <configuration name="SignUpTest.signUpPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 14m 18s.xml">
+      <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 14m 47s.xml">
+      <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 15m 15s.xml">
+      <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 17m 11s.xml">
+      <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 17m 50s.xml">
+      <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 18m 30s.xml">
+      <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 20m 26s.xml">
+      <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UpdateUserTest_updateUserRegressionCases - 2019.10.07 at 19h 22m 23s.xml">
+      <configuration name="UpdateUserTest.updateUserRegressionCases" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30010834" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36619717" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3434453" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19829424" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" order="3" visible="true" weight="0.19826652" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.24918744" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4312026" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="res.getStatusCode()" language="JAVA" />
+        <watch expression="res.getStatusCode()" language="JAVA" />
+        <watch expression="res.jsonPath()" language="JAVA" />
+        <watch expression="userToUpdate.getName()" language="JAVA" />
+        <watch expression="userToUpdate" language="JAVA" />
+        <watch expression="retrievedData[row][col]" language="JAVA" />
+        <watch expression="getKeyForIndex(col)" language="JAVA" />
+        <watch expression="testData[row].length" language="JAVA" />
+        <watch expression="testData[row]" language="JAVA" />
+        <watch expression="res.getStatusCode()" language="JAVA" />
+        <watch expression="res.jsonPath().get(&quot;id&quot;)" language="JAVA" />
+        <watch expression="method.getName() + &quot;_&quot; + testData[0]" language="JAVA" />
+        <watch expression="returnedBody.jsonParser" language="JAVA" />
+        <watch expression="res.asString()" language="JAVA" />
+        <watch expression="getKeyForIndex(col)" language="JAVA" />
+        <watch expression="res.asString()" language="JAVA" />
+        <watch expression="retrievedData[row][col] != &quot;MISSING&quot;" language="JAVA" />
+        <watch expression="!retrievedData[row][col].toString().equals(&quot;MISSING&quot;)" language="JAVA" />
+        <watch expression="Logger.getRootLogger()" language="JAVA" />
+        <watch expression="result.getMethod().getMethodName()" language="JAVA" />
+        <watch expression="method.getClass().getSimpleName()" language="JAVA" />
+        <watch expression="method.getClass().getEnclosingMethod().getName()" language="JAVA" />
+        <watch expression="res.asString()" language="JAVA" />
+        <watch expression="userToCreate.getUserName()" language="JAVA" />
+        <watch expression="returnedBody.get(&quot;id&quot;).toString()" language="JAVA" />
+        <watch expression="returnedBody.get(&quot;id&quot;)" language="JAVA" />
+        <watch expression="userToUpdate.toJson()" language="JAVA" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="testSheet.getPhysicalNumberOfRows()" language="JAVA" />
+        <watch expression="currentCell" language="JAVA" />
+        <watch expression="currentCell" language="JAVA" />
+        <watch expression="currentCell.getStringCellValue()" language="JAVA" />
+        <watch expression="testData.length" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>userToUpdate.toJson()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>returnedBody.get(&quot;id&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>userToCreate.getUserName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>returnedBody.get(&quot;id&quot;).toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res.asString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getClass().getEnclosingMethod().getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getClass().getSimpleName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result.getMethod().getMethodName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Logger.getRootLogger()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>!retrievedData[row][col].toString().equals(&quot;MISSING&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test-output/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testutils/TestBase.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/UnitTests.java" />
+    <entry file="file://$PROJECT_DIR$/waes-test.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/IntegrationTests.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jayway/restassured/rest-assured/2.9.0/rest-assured-2.9.0.jar!/com/jayway/restassured/internal/RestAssuredResponseImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="768" column="42" selection-start-line="768" selection-start-column="22" selection-end-line="768" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <folding>
+            <element signature="method#withUserName#0;class#User#0" />
+            <element signature="method#withAdmin#0;class#User#0" />
+            <element signature="method#withDateOfBirth#0;class#User#0" />
+            <element signature="method#withEmail#0;class#User#0" />
+            <element signature="method#withName#0;class#User#0" />
+            <element signature="method#withPassword#0;class#User#0" />
+            <element signature="method#withSuperpower#0;class#User#0" />
+            <element signature="method#withId#0;class#User#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jayway/restassured/json-path/2.9.0/json-path-2.9.0.jar!/com/jayway/restassured/path/json/JsonPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2008">
+          <caret line="376" column="48" selection-start-line="376" selection-start-column="39" selection-end-line="376" selection-end-column="48" />
+          <folding>
+            <element signature="e#2190#2506#0" />
+            <element signature="e#2432#2499#1" />
+            <element signature="e#2573#2840#0" />
+            <element signature="e#2846#2980#0" />
+            <element signature="e#2986#3118#0" />
+            <element signature="e#3124#3528#0" />
+            <element signature="e#3234#3280#1" />
+            <element signature="e#3314#3371#1" />
+            <element signature="e#3377#3522#1" />
+            <element signature="e#3534#3934#0" />
+            <element signature="e#3643#3686#1" />
+            <element signature="e#3719#3776#1" />
+            <element signature="e#3782#3928#1" />
+            <element signature="e#3940#4348#0" />
+            <element signature="e#4052#4096#1" />
+            <element signature="e#4129#4187#1" />
+            <element signature="e#4193#4342#1" />
+            <element signature="e#4354#4567#0" />
+            <element signature="e#4573#4775#0" />
+            <element signature="e#4781#5183#0" />
+            <element signature="e#4890#4933#1" />
+            <element signature="e#4967#5025#1" />
+            <element signature="e#5031#5177#1" />
+            <element signature="e#5189#5319#0" />
+            <element signature="e#5543#6015#0" />
+            <element signature="e#5730#5954#1" />
+            <element signature="e#5816#5944#1" />
+            <element signature="e#6114#6769#0" />
+            <element signature="e#6383#6710#1" />
+            <element signature="e#6775#8018#0" />
+            <element signature="e#6912#6948#1" />
+            <element signature="e#7013#7096#1" />
+            <element signature="e#7102#8012#1" />
+            <element signature="e#7310#7396#1" />
+            <element signature="e#7446#7527#1" />
+            <element signature="e#7582#7668#1" />
+            <element signature="e#7715#7889#1" />
+            <element signature="e#7895#8002#1" />
+            <element signature="e#8024#8276#0" />
+            <element signature="e#8159#8211#1" />
+            <element signature="e#8282#8382#0" />
+            <element signature="e#8388#8473#0" />
+            <element signature="e#8479#8616#0" />
+            <element signature="e#8622#8757#0" />
+            <element signature="e#8763#8914#0" />
+            <element signature="e#8920#9084#0" />
+            <element signature="e#9090#9254#0" />
+            <element signature="e#10775#10934#0" />
+            <element signature="e#10940#11417#0" />
+            <element signature="class#11032:11410" />
+            <element signature="method#doParseWith#0;class#11032:11410" />
+            <element signature="class#11163:11375" />
+            <element signature="method#method#0;class#11163:11375" />
+            <element signature="e#11423#11866#0" />
+            <element signature="class#11505:11859" />
+            <element signature="method#doParseWith#0;class#11505:11859" />
+            <element signature="class#11636:11824" />
+            <element signature="method#method#0;class#11636:11824" />
+            <element signature="e#11872#12323#0" />
+            <element signature="class#11948:12316" />
+            <element signature="method#doParseWith#0;class#11948:12316" />
+            <element signature="class#12079:12281" />
+            <element signature="method#method#0;class#12079:12281" />
+            <element signature="e#12776#13244#0" />
+            <element signature="class#12849:13237" />
+            <element signature="method#doParseWith#0;class#12849:13237" />
+            <element signature="class#12980:13202" />
+            <element signature="method#method#0;class#12980:13202" />
+            <element signature="e#13250#13596#0" />
+            <element signature="e#13368#13460#0" />
+            <element signature="e#13503#13590#0" />
+            <element signature="e#13602#13871#0" />
+            <element signature="e#13877#14366#0" />
+            <element signature="e#14273#14329#1" />
+            <element signature="e#14372#14566#0" />
+            <element signature="e#14572#14914#0" />
+            <element signature="e#14704#14755#1" />
+            <element signature="e#14794#14844#1" />
+            <element signature="e#14850#14887#1" />
+            <element signature="e#14983#15329#0" />
+            <element signature="e#15162#15228#1" />
+            <element signature="e#15234#15295#1" />
+            <element signature="e#15335#15736#0" />
+            <element signature="e#15409#15441#0" />
+            <element signature="e#15451#15662#0" />
+            <element signature="e#15551#15621#1" />
+            <element signature="e#15742#16139#0" />
+            <element signature="e#15792#15830#0" />
+            <element signature="e#15902#16133#0" />
+            <element signature="e#15943#15996#0" />
+            <element signature="e#16020#16123#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/WAES-Suite/Regression.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/WAES-Suite/Regression.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/WAES-Suite/testng-failed.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/WaesProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/WaesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/BasicConfigurator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/IInvokedMethodListene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ExcelManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/3.0.7/extentreports-3.0.7.jar!/com/aventstack/extentreports/ExtentReports.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/WaesListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" selection-start-line="13" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waes-logs.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/ExtentReporterNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="method#setProperties#0;class#TestBase#0" />
+            <element signature="method#BeforeMethod#0;class#TestBase#0" />
+            <element signature="e#1064#1197#1" />
+            <element signature="method#endTest#0;class#TestBase#0" />
+            <element signature="e#2201#2409#1" />
+            <element signature="e#2462#2613#1" />
+            <element signature="e#2663#2754#1" />
+            <element signature="n#!!block;n#getTestName#0;n#TestBase#0" />
+            <element signature="method#tearDownSuite#0;class#TestBase#0" />
+            <element signature="method#reportLog#0;class#TestBase#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/env.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/DeleteUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+          <folding>
+            <element signature="method#beforeClass#0;class#DeleteUserTest#0" />
+            <element signature="method#deletePositive#0;class#DeleteUserTest#0" />
+            <element signature="e#1471#1537#0" />
+            <element signature="method#deleteNonExistingUser#0;class#DeleteUserTest#0" />
+            <element signature="method#deleteInvalidAuth#0;class#DeleteUserTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetAllUsersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="method#beforeClass#0;class#GetAllUsersTest#0" />
+            <element signature="method#getAllUsersPositive#0;class#GetAllUsersTest#0" />
+            <element signature="method#getAllUsersInvalidAuth#0;class#GetAllUsersTest#0" />
+            <element signature="method#getAllUsersInvalidAuth#1;class#GetAllUsersTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="36" selection-end-column="7" />
+          <folding>
+            <element signature="method#beforeClass#0;class#LoginTest#0" />
+            <element signature="method#loginPositive#0;class#LoginTest#0" />
+            <element signature="docComment;method#loginPositive#1;class#LoginTest#0" />
+            <element signature="method#loginPositive#1;class#LoginTest#0" />
+            <element signature="docComment;method#getLoginInvalidAuth#0;class#LoginTest#0" />
+            <element signature="method#getLoginInvalidAuth#0;class#LoginTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/TestCasesData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="40" column="53" selection-start-line="37" selection-start-column="8" selection-end-line="40" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/SignUpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="86" selection-end-column="7" />
+          <folding>
+            <element signature="method#beforeClass#0;class#SignUpTest#0" />
+            <element signature="method#signUpCornerCases#0;class#SignUpTest#0" />
+            <element signature="e#2228#2855#1" />
+            <element signature="method#testData#0;class#SignUpTest#0" />
+            <element signature="e#2480#3221#1" />
+            <element signature="e#2601#3211#1" />
+            <element signature="e#2743#2998#1" />
+            <element signature="e#3031#3197#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/UpdateUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.61326534" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>waes-test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.61326534" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.61326534" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 44, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.418 s <<< FAILURE! - in TestSuite
+signUpRegressionCases_EmptyEmail(waesqa.SignUpTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [403]
+	at waesqa.SignUpTest.signUpRegressionCases(SignUpTest.java:96)
+

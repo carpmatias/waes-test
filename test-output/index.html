@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Default Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_Suite" class="navigator-link ">
+                    <span>C:\Users\BLUE TRAIL SOFTWARE\.IdeaIC2018.3\system\temp-testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(EmptyEmail, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user486&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:fa...)">updateUserRegressionCases(EmptyEmail, {"password":"waestestpass","name":"test user486","dateOfBirth":"2018-12-12","isAdmin":fa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(WithId, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user170&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;id&quot;:29,&quot;isAdmin...)">updateUserRegressionCases(WithId, {"password":"waestestpass","name":"test user170","dateOfBirth":"2018-12-12","id":29,"isAdmin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(MissingEmail, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user166&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:...)">updateUserRegressionCases(MissingEmail, {"password":"waestestpass","name":"test user166","dateOfBirth":"2018-12-12","isAdmin":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(MissingDateOfBirth, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user708&quot;,&quot;isAdmin&quot;:false,&quot;email&quot;:&quot;newtes...)">updateUserRegressionCases(MissingDateOfBirth, {"password":"waestestpass","name":"test user708","isAdmin":false,"email":"newtes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(EmptyUsername, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user429&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;...)">updateUserRegressionCases(EmptyUsername, {"password":"waestestpass","name":"test user429","dateOfBirth":"2018-12-12","isAdmin"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(EmptyDateOfBirth, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user369&quot;,&quot;dateOfBirth&quot;:&quot;&quot;,&quot;isAdmin&quot;:false,...)">updateUserRegressionCases(EmptyDateOfBirth, {"password":"waestestpass","name":"test user369","dateOfBirth":"","isAdmin":false,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(EmptyName, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:false,&quot;email&quot;:&quot;...)">updateUserRegressionCases(EmptyName, {"password":"waestestpass","name":"","dateOfBirth":"2018-12-12","isAdmin":false,"email":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(MissingIsAdmin, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user722&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;email&quot;:...)">updateUserRegressionCases(MissingIsAdmin, {"password":"waestestpass","name":"test user722","dateOfBirth":"2018-12-12","email":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(EmptyPassword, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user723&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;...)">updateUserRegressionCases(EmptyPassword, {"password":"waestestpass","name":"test user723","dateOfBirth":"2018-12-12","isAdmin"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(MissingName, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:false,&quot;email&quot;:&quot;newtestu...)">updateUserRegressionCases(MissingName, {"password":"waestestpass","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(EmptySuperpower, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user204&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmi...)">updateUserRegressionCases(EmptySuperpower, {"password":"waestestpass","name":"test user204","dateOfBirth":"2018-12-12","isAdmi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(MissingUsername, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user857&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmi...)">updateUserRegressionCases(MissingUsername, {"password":"waestestpass","name":"test user857","dateOfBirth":"2018-12-12","isAdmi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(MissingSuperpower, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user902&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAd...)">updateUserRegressionCases(MissingSuperpower, {"password":"waestestpass","name":"test user902","dateOfBirth":"2018-12-12","isAd...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(EmptyIsAdmin, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user939&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:...)">updateUserRegressionCases(EmptyIsAdmin, {"password":"waestestpass","name":"test user939","dateOfBirth":"2018-12-12","isAdmin":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="waesqa.UpdateUserTest" class="method navigator-link" hash-for-method="updateUserRegressionCases(MissingPassword, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user431&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmi...)">updateUserRegressionCases(MissingPassword, {"password":"waestestpass","name":"test user431","dateOfBirth":"2018-12-12","isAdmi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">waesqa.UpdateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(EmptyEmail, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user486&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:fa...)">
+                  </a> <!-- updateUserRegressionCases(EmptyEmail, {"password":"waestestpass","name":"test user486","dateOfBirth":"2018-12-12","isAdmin":fa...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(EmptyEmail, {"password":"waestestpass","name":"test user486","dateOfBirth":"2018-12-12","isAdmin":false,"email":"","superpower":"Kaoiken 466","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(WithId, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user170&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;id&quot;:29,&quot;isAdmin...)">
+                  </a> <!-- updateUserRegressionCases(WithId, {"password":"waestestpass","name":"test user170","dateOfBirth":"2018-12-12","id":29,"isAdmin...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(WithId, {"password":"waestestpass","name":"test user170","dateOfBirth":"2018-12-12","id":29,"isAdmin":false,"email":"newtestuser155@wearewaes.com","superpower":"Kaoiken 129","username":"test-user-742"}, 404)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(MissingEmail, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user166&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:...)">
+                  </a> <!-- updateUserRegressionCases(MissingEmail, {"password":"waestestpass","name":"test user166","dateOfBirth":"2018-12-12","isAdmin":...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(MissingEmail, {"password":"waestestpass","name":"test user166","dateOfBirth":"2018-12-12","isAdmin":false,"superpower":"Kaoiken 690","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(MissingDateOfBirth, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user708&quot;,&quot;isAdmin&quot;:false,&quot;email&quot;:&quot;newtes...)">
+                  </a> <!-- updateUserRegressionCases(MissingDateOfBirth, {"password":"waestestpass","name":"test user708","isAdmin":false,"email":"newtes...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(MissingDateOfBirth, {"password":"waestestpass","name":"test user708","isAdmin":false,"email":"newtestuser240@wearewaes.com","superpower":"Kaoiken 567","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(EmptyUsername, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user429&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;...)">
+                  </a> <!-- updateUserRegressionCases(EmptyUsername, {"password":"waestestpass","name":"test user429","dateOfBirth":"2018-12-12","isAdmin"...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(EmptyUsername, {"password":"waestestpass","name":"test user429","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser489@wearewaes.com","superpower":"Kaoiken 72","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(EmptyDateOfBirth, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user369&quot;,&quot;dateOfBirth&quot;:&quot;&quot;,&quot;isAdmin&quot;:false,...)">
+                  </a> <!-- updateUserRegressionCases(EmptyDateOfBirth, {"password":"waestestpass","name":"test user369","dateOfBirth":"","isAdmin":false,...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(EmptyDateOfBirth, {"password":"waestestpass","name":"test user369","dateOfBirth":"","isAdmin":false,"email":"newtestuser517@wearewaes.com","superpower":"Kaoiken 752","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(EmptyName, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:false,&quot;email&quot;:&quot;...)">
+                  </a> <!-- updateUserRegressionCases(EmptyName, {"password":"waestestpass","name":"","dateOfBirth":"2018-12-12","isAdmin":false,"email":"...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(EmptyName, {"password":"waestestpass","name":"","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser177@wearewaes.com","superpower":"Kaoiken 936","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(MissingIsAdmin, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user722&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;email&quot;:...)">
+                  </a> <!-- updateUserRegressionCases(MissingIsAdmin, {"password":"waestestpass","name":"test user722","dateOfBirth":"2018-12-12","email":...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(MissingIsAdmin, {"password":"waestestpass","name":"test user722","dateOfBirth":"2018-12-12","email":"newtestuser374@wearewaes.com","superpower":"Kaoiken 377","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(EmptyPassword, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user723&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;...)">
+                  </a> <!-- updateUserRegressionCases(EmptyPassword, {"password":"waestestpass","name":"test user723","dateOfBirth":"2018-12-12","isAdmin"...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(EmptyPassword, {"password":"waestestpass","name":"test user723","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser190@wearewaes.com","superpower":"Kaoiken 185","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(MissingName, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:false,&quot;email&quot;:&quot;newtestu...)">
+                  </a> <!-- updateUserRegressionCases(MissingName, {"password":"waestestpass","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestu...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(MissingName, {"password":"waestestpass","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser795@wearewaes.com","superpower":"Kaoiken 380","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(EmptySuperpower, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user204&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmi...)">
+                  </a> <!-- updateUserRegressionCases(EmptySuperpower, {"password":"waestestpass","name":"test user204","dateOfBirth":"2018-12-12","isAdmi...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(EmptySuperpower, {"password":"waestestpass","name":"test user204","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser627@wearewaes.com","superpower":"","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(MissingUsername, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user857&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmi...)">
+                  </a> <!-- updateUserRegressionCases(MissingUsername, {"password":"waestestpass","name":"test user857","dateOfBirth":"2018-12-12","isAdmi...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(MissingUsername, {"password":"waestestpass","name":"test user857","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser822@wearewaes.com","superpower":"Kaoiken 429","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(MissingSuperpower, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user902&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAd...)">
+                  </a> <!-- updateUserRegressionCases(MissingSuperpower, {"password":"waestestpass","name":"test user902","dateOfBirth":"2018-12-12","isAd...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(MissingSuperpower, {"password":"waestestpass","name":"test user902","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser925@wearewaes.com","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(EmptyIsAdmin, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user939&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmin&quot;:...)">
+                  </a> <!-- updateUserRegressionCases(EmptyIsAdmin, {"password":"waestestpass","name":"test user939","dateOfBirth":"2018-12-12","isAdmin":...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(EmptyIsAdmin, {"password":"waestestpass","name":"test user939","dateOfBirth":"2018-12-12","isAdmin":"","email":"newtestuser427@wearewaes.com","superpower":"Kaoiken 342","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserRegressionCases(MissingPassword, {&quot;password&quot;:&quot;waestestpass&quot;,&quot;name&quot;:&quot;test user431&quot;,&quot;dateOfBirth&quot;:&quot;2018-12-12&quot;,&quot;isAdmi...)">
+                  </a> <!-- updateUserRegressionCases(MissingPassword, {"password":"waestestpass","name":"test user431","dateOfBirth":"2018-12-12","isAdmi...) -->
+                  <span class="method-name">updateUserRegressionCases</span>
+                  <span class="parameters">(MissingPassword, {"password":"waestestpass","name":"test user431","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser481@wearewaes.com","superpower":"Kaoiken 596","username":"test-user-742"}, 400)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+        </div> <!-- panel Default_Suite -->
+        <div panel-name="test-xml-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\BLUE TRAIL SOFTWARE\.IdeaIC2018.3\system\temp-testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;waes-test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;waesqa.UpdateUserTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;updateUserRegressionCases&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- waesqa.UpdateUserTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- waes-test --&gt;
+&lt;/suite&gt; &lt;!-- Default Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">waes-test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'updateUserRegressionCases')
+data.setCell(0, 2, 'waesqa.UpdateUserTest')
+data.setCell(0, 3, 1096);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'updateUserRegressionCases')
+data.setCell(1, 2, 'waesqa.UpdateUserTest')
+data.setCell(1, 3, 1091);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateUserRegressionCases')
+data.setCell(2, 2, 'waesqa.UpdateUserTest')
+data.setCell(2, 3, 1090);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'updateUserRegressionCases')
+data.setCell(3, 2, 'waesqa.UpdateUserTest')
+data.setCell(3, 3, 1088);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'updateUserRegressionCases')
+data.setCell(4, 2, 'waesqa.UpdateUserTest')
+data.setCell(4, 3, 1087);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'updateUserRegressionCases')
+data.setCell(5, 2, 'waesqa.UpdateUserTest')
+data.setCell(5, 3, 1087);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'updateUserRegressionCases')
+data.setCell(6, 2, 'waesqa.UpdateUserTest')
+data.setCell(6, 3, 1087);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'updateUserRegressionCases')
+data.setCell(7, 2, 'waesqa.UpdateUserTest')
+data.setCell(7, 3, 1086);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'updateUserRegressionCases')
+data.setCell(8, 2, 'waesqa.UpdateUserTest')
+data.setCell(8, 3, 1085);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'updateUserRegressionCases')
+data.setCell(9, 2, 'waesqa.UpdateUserTest')
+data.setCell(9, 3, 1084);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'updateUserRegressionCases')
+data.setCell(10, 2, 'waesqa.UpdateUserTest')
+data.setCell(10, 3, 1082);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'updateUserRegressionCases')
+data.setCell(11, 2, 'waesqa.UpdateUserTest')
+data.setCell(11, 3, 1081);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'updateUserRegressionCases')
+data.setCell(12, 2, 'waesqa.UpdateUserTest')
+data.setCell(12, 3, 1080);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'updateUserRegressionCases')
+data.setCell(13, 2, 'waesqa.UpdateUserTest')
+data.setCell(13, 3, 1080);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'updateUserRegressionCases')
+data.setCell(14, 2, 'waesqa.UpdateUserTest')
+data.setCell(14, 3, 1077);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <div id="times-div-Default_Suite">
+              </div> <!-- times-div-Default_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">waesqa.UpdateUserTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">updateUserPositive</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">waesqa.UpdateUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">before</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setProperties</span>
+                <span class="method-start">97 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">99 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">1612 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(WithId, {"password":"waestestpass","name":"test user170","dateOfBirth":"2018-12-12","id":29,"isAdmin...)</span>
+                <span class="method-start">1620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_WithId status=SUCCESS method=UpdateUserTest.updateUserReg...)</span>
+                <span class="method-start">2713 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">2720 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(EmptyName, {"password":"waestestpass","name":"","dateOfBirth":"2018-12-12","isAdmin":false,"email":"...)</span>
+                <span class="method-start">2722 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_EmptyName status=SUCCESS method=UpdateUserTest.updateUser...)</span>
+                <span class="method-start">3819 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">3821 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(EmptyUsername, {"password":"waestestpass","name":"test user429","dateOfBirth":"2018-12-12","isAdmin"...)</span>
+                <span class="method-start">3823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_EmptyUsername status=SUCCESS method=UpdateUserTest.update...)</span>
+                <span class="method-start">4904 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">4906 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(EmptyEmail, {"password":"waestestpass","name":"test user486","dateOfBirth":"2018-12-12","isAdmin":fa...)</span>
+                <span class="method-start">4909 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_EmptyEmail status=SUCCESS method=UpdateUserTest.updateUse...)</span>
+                <span class="method-start">5997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">6000 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(EmptySuperpower, {"password":"waestestpass","name":"test user204","dateOfBirth":"2018-12-12","isAdmi...)</span>
+                <span class="method-start">6002 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_EmptySuperpower status=SUCCESS method=UpdateUserTest.upda...)</span>
+                <span class="method-start">7087 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">7089 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(EmptyDateOfBirth, {"password":"waestestpass","name":"test user369","dateOfBirth":"","isAdmin":false,...)</span>
+                <span class="method-start">7092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_EmptyDateOfBirth status=SUCCESS method=UpdateUserTest.upd...)</span>
+                <span class="method-start">8182 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">8183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(EmptyIsAdmin, {"password":"waestestpass","name":"test user939","dateOfBirth":"2018-12-12","isAdmin":...)</span>
+                <span class="method-start">8184 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_EmptyIsAdmin status=SUCCESS method=UpdateUserTest.updateU...)</span>
+                <span class="method-start">9273 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">9275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(EmptyPassword, {"password":"waestestpass","name":"test user723","dateOfBirth":"2018-12-12","isAdmin"...)</span>
+                <span class="method-start">9278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_EmptyPassword status=SUCCESS method=UpdateUserTest.update...)</span>
+                <span class="method-start">10359 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">10373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(MissingName, {"password":"waestestpass","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestu...)</span>
+                <span class="method-start">10374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_MissingName status=SUCCESS method=UpdateUserTest.updateUs...)</span>
+                <span class="method-start">11459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">11459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(MissingUsername, {"password":"waestestpass","name":"test user857","dateOfBirth":"2018-12-12","isAdmi...)</span>
+                <span class="method-start">11460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_MissingUsername status=SUCCESS method=UpdateUserTest.upda...)</span>
+                <span class="method-start">12538 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">12541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(MissingEmail, {"password":"waestestpass","name":"test user166","dateOfBirth":"2018-12-12","isAdmin":...)</span>
+                <span class="method-start">12543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_MissingEmail status=SUCCESS method=UpdateUserTest.updateU...)</span>
+                <span class="method-start">13624 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">13626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(MissingSuperpower, {"password":"waestestpass","name":"test user902","dateOfBirth":"2018-12-12","isAd...)</span>
+                <span class="method-start">13627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_MissingSuperpower status=SUCCESS method=UpdateUserTest.up...)</span>
+                <span class="method-start">14714 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">14715 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(MissingDateOfBirth, {"password":"waestestpass","name":"test user708","isAdmin":false,"email":"newtes...)</span>
+                <span class="method-start">14716 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_MissingDateOfBirth status=SUCCESS method=UpdateUserTest.u...)</span>
+                <span class="method-start">15798 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">15799 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(MissingIsAdmin, {"password":"waestestpass","name":"test user722","dateOfBirth":"2018-12-12","email":...)</span>
+                <span class="method-start">15800 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_MissingIsAdmin status=SUCCESS method=UpdateUserTest.updat...)</span>
+                <span class="method-start">16891 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int...)</span>
+                <span class="method-start">16892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateUserRegressionCases(MissingPassword, {"password":"waestestpass","name":"test user431","dateOfBirth":"2018-12-12","isAdmi...)</span>
+                <span class="method-start">16893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest([TestResult name=updateUserRegressionCases_MissingPassword status=SUCCESS method=UpdateUserTest.upda...)</span>
+                <span class="method-start">17979 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">17998 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
