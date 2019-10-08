@@ -1,16 +1,118 @@
-<h2>Reporter output</h2><table><tr><td>RUNNING TEST: *** updateUserRegressionCases_WithId ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyName ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyUsername ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyEmail ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptySuperpower ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyDateOfBirth ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyIsAdmin ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyPassword ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingName ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingUsername ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingEmail ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingSuperpower ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingDateOfBirth ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingIsAdmin ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingPassword ***</td></tr>
+<h2>Reporter output</h2><table><tr><td>RUNNING TEST: *** signUpPositive ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 148","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser148@wearewaes.com","superpower":"Henki dama","username":"test-user-148"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":0,"name":"New test user 148","username":"test-user-148","email":"newtestuser148@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
+<tr><td>REQUEST: GET User - /waesheroes/api/v1/users/details</td></tr>
+<tr><td>Query params -> username: test-user-148</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> {"id":24,"name":"New test user 148","username":"test-user-148","email":"newtestuser148@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_WithId ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user85","dateOfBirth":"2018-12-12","id":905,"isAdmin":false,"email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","username":"test-user-488"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":905,"name":"test user85","username":"test-user-488","email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyName ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user148","dateOfBirth":"2018-12-12","id":918,"isAdmin":false,"email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","username":"test-user-722"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":918,"name":"test user148","username":"test-user-722","email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyUsername ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user510","dateOfBirth":"2018-12-12","id":555,"isAdmin":false,"email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","username":"test-user-884"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":555,"name":"test user510","username":"test-user-884","email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyEmail ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user228","dateOfBirth":"2018-12-12","id":490,"isAdmin":false,"email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","username":"test-user-58"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":490,"name":"test user228","username":"test-user-58","email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptySuperpower ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user825","dateOfBirth":"2018-12-12","id":551,"isAdmin":false,"email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","username":"test-user-618"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":551,"name":"test user825","username":"test-user-618","email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyDateOfBirth ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user963","dateOfBirth":"2018-12-12","id":812,"isAdmin":false,"email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","username":"test-user-178"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":812,"name":"test user963","username":"test-user-178","email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyIsAdmin ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user733","dateOfBirth":"2018-12-12","id":761,"isAdmin":false,"email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","username":"test-user-23"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":761,"name":"test user733","username":"test-user-23","email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyPassword ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user815","dateOfBirth":"2018-12-12","id":32,"isAdmin":false,"email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","username":"test-user-170"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":32,"name":"test user815","username":"test-user-170","email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingName ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user146","dateOfBirth":"2018-12-12","id":467,"isAdmin":false,"email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","username":"test-user-664"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":467,"name":"test user146","username":"test-user-664","email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingUsername ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user478","dateOfBirth":"2018-12-12","id":817,"isAdmin":false,"email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","username":"test-user-405"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":817,"name":"test user478","username":"test-user-405","email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingEmail ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user593","dateOfBirth":"2018-12-12","id":732,"isAdmin":false,"email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","username":"test-user-999"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":732,"name":"test user593","username":"test-user-999","email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingSuperpower ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user930","dateOfBirth":"2018-12-12","id":208,"isAdmin":false,"email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","username":"test-user-61"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":208,"name":"test user930","username":"test-user-61","email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingDateOfBirth ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user257","dateOfBirth":"2018-12-12","id":861,"isAdmin":false,"email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","username":"test-user-371"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":861,"name":"test user257","username":"test-user-371","email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingIsAdmin ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user743","dateOfBirth":"2018-12-12","id":377,"isAdmin":false,"email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","username":"test-user-302"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":377,"name":"test user743","username":"test-user-302","email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingPassword ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"test user912","dateOfBirth":"2018-12-12","id":12,"isAdmin":false,"email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","username":"test-user-923"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":12,"name":"test user912","username":"test-user-923","email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","dateOfBirth":"2018-12-12","isAdmin":false}</td></tr>
 </table>

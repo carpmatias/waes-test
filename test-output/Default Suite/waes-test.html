@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>waes-test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 07 19:22:04 ART 2019</td>
+<td>Started on:</td><td>Mon Oct 07 23:22:38 ART 2019</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17893 ms)</td>
+<tr><td>Total time:</td><td>18 seconds (18413 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,80 +75,282 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: WithId, {"password":"waestestpass","name":"test user170","dateOfBirth":"2018-12-12","id":29,"isAdmin":false,"email":"newtestuser155@wearewaes.com","superpower":"Kaoiken 129","username":"test-user-742"}, 404</td>
+<td title='waesqa.SignUpTest.signUpPositive()'><b>signUpPositive</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br/>
+<a href="#Output-1191864687" onClick='toggleBox("Output-1191864687", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1191864687" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1191864687">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"New test user 148","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser148@wearewaes.com","superpower":"Henki dama","username":"test-user-148"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":0,"name":"New test user 148","username":"test-user-148","email":"newtestuser148@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}<br/>
+REQUEST: GET User - /waesheroes/api/v1/users/details<br/>
+Query params -> username: test-user-148<br/>
+RESPONSE: <br/>
+Code -> 200<br/>
+Body -> {"id":24,"name":"New test user 148","username":"test-user-148","email":"newtestuser148@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyName, {"password":"waestestpass","name":"","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser177@wearewaes.com","superpower":"Kaoiken 936","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: WithId, {"password":"waestestpass","name":"test user85","dateOfBirth":"2018-12-12","id":905,"isAdmin":false,"email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","username":"test-user-488"}, 201<br/>
+<a href="#Output-1496332643" onClick='toggleBox("Output-1496332643", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1496332643" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1496332643">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user85","dateOfBirth":"2018-12-12","id":905,"isAdmin":false,"email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","username":"test-user-488"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":905,"name":"test user85","username":"test-user-488","email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyUsername, {"password":"waestestpass","name":"test user429","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser489@wearewaes.com","superpower":"Kaoiken 72","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: EmptyName, {"password":"waestestpass","name":"test user148","dateOfBirth":"2018-12-12","id":918,"isAdmin":false,"email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","username":"test-user-722"}, 201<br/>
+<a href="#Output-713538100" onClick='toggleBox("Output-713538100", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-713538100" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-713538100">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user148","dateOfBirth":"2018-12-12","id":918,"isAdmin":false,"email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","username":"test-user-722"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":918,"name":"test user148","username":"test-user-722","email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyEmail, {"password":"waestestpass","name":"test user486","dateOfBirth":"2018-12-12","isAdmin":false,"email":"","superpower":"Kaoiken 466","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: EmptyUsername, {"password":"waestestpass","name":"test user510","dateOfBirth":"2018-12-12","id":555,"isAdmin":false,"email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","username":"test-user-884"}, 201<br/>
+<a href="#Output-1327478824" onClick='toggleBox("Output-1327478824", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1327478824" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1327478824">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user510","dateOfBirth":"2018-12-12","id":555,"isAdmin":false,"email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","username":"test-user-884"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":555,"name":"test user510","username":"test-user-884","email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptySuperpower, {"password":"waestestpass","name":"test user204","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser627@wearewaes.com","superpower":"","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: EmptyEmail, {"password":"waestestpass","name":"test user228","dateOfBirth":"2018-12-12","id":490,"isAdmin":false,"email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","username":"test-user-58"}, 201<br/>
+<a href="#Output-366180667" onClick='toggleBox("Output-366180667", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-366180667" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-366180667">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user228","dateOfBirth":"2018-12-12","id":490,"isAdmin":false,"email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","username":"test-user-58"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":490,"name":"test user228","username":"test-user-58","email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyDateOfBirth, {"password":"waestestpass","name":"test user369","dateOfBirth":"","isAdmin":false,"email":"newtestuser517@wearewaes.com","superpower":"Kaoiken 752","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: EmptySuperpower, {"password":"waestestpass","name":"test user825","dateOfBirth":"2018-12-12","id":551,"isAdmin":false,"email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","username":"test-user-618"}, 201<br/>
+<a href="#Output-2000429588" onClick='toggleBox("Output-2000429588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2000429588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2000429588">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user825","dateOfBirth":"2018-12-12","id":551,"isAdmin":false,"email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","username":"test-user-618"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":551,"name":"test user825","username":"test-user-618","email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyIsAdmin, {"password":"waestestpass","name":"test user939","dateOfBirth":"2018-12-12","isAdmin":"","email":"newtestuser427@wearewaes.com","superpower":"Kaoiken 342","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: EmptyDateOfBirth, {"password":"waestestpass","name":"test user963","dateOfBirth":"2018-12-12","id":812,"isAdmin":false,"email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","username":"test-user-178"}, 201<br/>
+<a href="#Output-1208794670" onClick='toggleBox("Output-1208794670", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1208794670" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1208794670">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user963","dateOfBirth":"2018-12-12","id":812,"isAdmin":false,"email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","username":"test-user-178"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":812,"name":"test user963","username":"test-user-178","email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: EmptyPassword, {"password":"waestestpass","name":"test user723","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser190@wearewaes.com","superpower":"Kaoiken 185","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: EmptyIsAdmin, {"password":"waestestpass","name":"test user733","dateOfBirth":"2018-12-12","id":761,"isAdmin":false,"email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","username":"test-user-23"}, 201<br/>
+<a href="#Output-948451889" onClick='toggleBox("Output-948451889", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-948451889" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-948451889">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user733","dateOfBirth":"2018-12-12","id":761,"isAdmin":false,"email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","username":"test-user-23"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":761,"name":"test user733","username":"test-user-23","email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingName, {"password":"waestestpass","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser795@wearewaes.com","superpower":"Kaoiken 380","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: EmptyPassword, {"password":"waestestpass","name":"test user815","dateOfBirth":"2018-12-12","id":32,"isAdmin":false,"email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","username":"test-user-170"}, 201<br/>
+<a href="#Output-2000856156" onClick='toggleBox("Output-2000856156", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2000856156" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2000856156">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user815","dateOfBirth":"2018-12-12","id":32,"isAdmin":false,"email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","username":"test-user-170"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":32,"name":"test user815","username":"test-user-170","email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingUsername, {"password":"waestestpass","name":"test user857","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser822@wearewaes.com","superpower":"Kaoiken 429","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: MissingName, {"password":"waestestpass","name":"test user146","dateOfBirth":"2018-12-12","id":467,"isAdmin":false,"email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","username":"test-user-664"}, 201<br/>
+<a href="#Output-455404074" onClick='toggleBox("Output-455404074", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-455404074" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-455404074">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user146","dateOfBirth":"2018-12-12","id":467,"isAdmin":false,"email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","username":"test-user-664"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":467,"name":"test user146","username":"test-user-664","email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingEmail, {"password":"waestestpass","name":"test user166","dateOfBirth":"2018-12-12","isAdmin":false,"superpower":"Kaoiken 690","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: MissingUsername, {"password":"waestestpass","name":"test user478","dateOfBirth":"2018-12-12","id":817,"isAdmin":false,"email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","username":"test-user-405"}, 201<br/>
+<a href="#Output-379833480" onClick='toggleBox("Output-379833480", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-379833480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-379833480">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user478","dateOfBirth":"2018-12-12","id":817,"isAdmin":false,"email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","username":"test-user-405"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":817,"name":"test user478","username":"test-user-405","email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingSuperpower, {"password":"waestestpass","name":"test user902","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser925@wearewaes.com","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: MissingEmail, {"password":"waestestpass","name":"test user593","dateOfBirth":"2018-12-12","id":732,"isAdmin":false,"email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","username":"test-user-999"}, 201<br/>
+<a href="#Output-1113666007" onClick='toggleBox("Output-1113666007", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1113666007" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1113666007">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user593","dateOfBirth":"2018-12-12","id":732,"isAdmin":false,"email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","username":"test-user-999"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":732,"name":"test user593","username":"test-user-999","email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingDateOfBirth, {"password":"waestestpass","name":"test user708","isAdmin":false,"email":"newtestuser240@wearewaes.com","superpower":"Kaoiken 567","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: MissingSuperpower, {"password":"waestestpass","name":"test user930","dateOfBirth":"2018-12-12","id":208,"isAdmin":false,"email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","username":"test-user-61"}, 201<br/>
+<a href="#Output-907858780" onClick='toggleBox("Output-907858780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-907858780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-907858780">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user930","dateOfBirth":"2018-12-12","id":208,"isAdmin":false,"email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","username":"test-user-61"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":208,"name":"test user930","username":"test-user-61","email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingIsAdmin, {"password":"waestestpass","name":"test user722","dateOfBirth":"2018-12-12","email":"newtestuser374@wearewaes.com","superpower":"Kaoiken 377","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: MissingDateOfBirth, {"password":"waestestpass","name":"test user257","dateOfBirth":"2018-12-12","id":861,"isAdmin":false,"email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","username":"test-user-371"}, 201<br/>
+<a href="#Output-1246807878" onClick='toggleBox("Output-1246807878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1246807878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1246807878">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user257","dateOfBirth":"2018-12-12","id":861,"isAdmin":false,"email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","username":"test-user-371"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":861,"name":"test user257","username":"test-user-371","email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 <tr>
-<td title='waesqa.UpdateUserTest.updateUserRegressionCases()'><b>updateUserRegressionCases</b><br>Test class: waesqa.UpdateUserTest (updateUserRegressionCases_MissingPassword)<br>Parameters: MissingPassword, {"password":"waestestpass","name":"test user431","dateOfBirth":"2018-12-12","isAdmin":false,"email":"newtestuser481@wearewaes.com","superpower":"Kaoiken 596","username":"test-user-742"}, 400</td>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: MissingIsAdmin, {"password":"waestestpass","name":"test user743","dateOfBirth":"2018-12-12","id":377,"isAdmin":false,"email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","username":"test-user-302"}, 201<br/>
+<a href="#Output-1779787990" onClick='toggleBox("Output-1779787990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1779787990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1779787990">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user743","dateOfBirth":"2018-12-12","id":377,"isAdmin":false,"email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","username":"test-user-302"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":377,"name":"test user743","username":"test-user-302","email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
 <td></td>
 <td>1</td>
-<td>waesqa.UpdateUserTest@c4ed84</td></tr>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
+<tr>
+<td title='waesqa.SignUpTest.signUpRegressionCases()'><b>signUpRegressionCases</b><br>Test class: waesqa.SignUpTest (signUpRegressionCases_MissingPassword)<br>Parameters: MissingPassword, {"password":"waestestpass","name":"test user912","dateOfBirth":"2018-12-12","id":12,"isAdmin":false,"email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","username":"test-user-923"}, 201<br/>
+<a href="#Output-1839548688" onClick='toggleBox("Output-1839548688", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1839548688" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1839548688">
+REQUEST: POST Sign up - /waesheroes/api/v1/users<br/>
+Header -> Content-Type: application/json<br/>
+Body -> {"password":"waestestpass","name":"test user912","dateOfBirth":"2018-12-12","id":12,"isAdmin":false,"email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","username":"test-user-923"}<br/>
+RESPONSE: <br/>
+Code -> 201<br/>
+Body -> {"id":12,"name":"test user912","username":"test-user-923","email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","dateOfBirth":"2018-12-12","isAdmin":false}<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>waesqa.SignUpTest@4a194c39</td></tr>
 </table><p>
 </body>
 </html>

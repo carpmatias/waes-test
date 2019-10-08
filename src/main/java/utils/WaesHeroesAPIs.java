@@ -2,7 +2,12 @@ package utils;
 
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import entities.User;
+import org.testng.Reporter;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 
 import static com.jayway.restassured.RestAssured.given;
@@ -10,6 +15,9 @@ import static com.jayway.restassured.RestAssured.given;
 public class WaesHeroesAPIs {
 
     public String baserUrl;
+    public static ExtentTest test;
+
+    protected static Logger logger = LogManager.getLogger(WaesHeroesAPIs.class.getName());
 
     public WaesHeroesAPIs(String baseUrl){
          this.baserUrl = baseUrl;
@@ -24,6 +32,12 @@ public class WaesHeroesAPIs {
                        .then()
                        .extract()
                        .response();
+
+        reportLog("REQUEST: GET User - /waesheroes/api/v1/users/details");
+        reportLog("Query params -> username: " + username);
+        reportLog("RESPONSE: ");
+        reportLog("Code -> " + res.getStatusCode());
+        reportLog("Body -> " + res.asString());
 
         return res;
     }
@@ -40,6 +54,12 @@ public class WaesHeroesAPIs {
                 .extract()
                 .response();
 
+        reportLog("REQUEST: GET All Users - /waesheroes/api/v1/users/all");
+        reportLog("Header -> Authorization: Basic " + key);
+        reportLog("RESPONSE: ");
+        reportLog("Code -> " + res.getStatusCode());
+        reportLog("Body -> " + res.asString());
+
         return res;
     }
 
@@ -55,6 +75,13 @@ public class WaesHeroesAPIs {
                 .extract()
                 .response();
 
+        reportLog("REQUEST: GET Login - /waesheroes/api/v1/users/access");
+        reportLog("Header -> Authorization: Basic " + key);
+        reportLog("Query params -> username: " + username);
+        reportLog("RESPONSE: ");
+        reportLog("Code -> " + res.getStatusCode());
+        reportLog("Body -> " + res.asString());
+
         return res;
     }
 
@@ -69,6 +96,13 @@ public class WaesHeroesAPIs {
                 .then()
                 .extract()
                 .response();
+
+        reportLog("REQUEST: POST Sign up - /waesheroes/api/v1/users");
+        reportLog("Header -> Content-Type: application/json");
+        reportLog("Body -> " + body.toString());
+        reportLog("RESPONSE: ");
+        reportLog("Code -> " + res.getStatusCode());
+        reportLog("Body -> " + res.asString());
 
         return res;
     }
@@ -87,6 +121,14 @@ public class WaesHeroesAPIs {
                 .extract()
                 .response();
 
+        reportLog("REQUEST: PUT User - /waesheroes/api/v1/users");
+        reportLog("Header -> Content-Type: application/json");
+        reportLog("Header -> Authorization: Basic " + key);
+        reportLog("Body -> " + body.toString());
+        reportLog("RESPONSE: ");
+        reportLog("Code -> " + res.getStatusCode());
+        reportLog("Body -> " + res.asString());
+
         return res;
     }
 
@@ -104,7 +146,23 @@ public class WaesHeroesAPIs {
                 .extract()
                 .response();
 
+        reportLog("REQUEST: DEL User - /waesheroes/api/v1/users");
+        reportLog("Header -> Content-Type: application/json");
+        reportLog("Header -> Authorization: Basic " + key);
+        reportLog("Body -> " + body.toString());
+        reportLog("RESPONSE: ");
+        reportLog("Code -> " + res.getStatusCode());
+        reportLog("Body -> " + res.asString());
+
         return res;
     }
+
+    public void reportLog(String message) {
+        if(test != null)
+            test.log(LogStatus.INFO, message);
+        logger.info("Message: " + message);
+        Reporter.log(message);
+    }
+
 
 }

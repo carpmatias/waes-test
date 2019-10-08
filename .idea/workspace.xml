@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java" line="21" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java" line="29" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ee06e88-60be-4893-873a-86a7f61a7cc6" name="Default Changelist" comment="" />
@@ -18,10 +18,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/DeleteUserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+            <state relative-caret-position="177">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <element signature="method#beforeClass#0;class#DeleteUserTest#0" />
                 <element signature="method#deletePositive#0;class#DeleteUserTest#0" />
                 <element signature="e#1471#1537#0" />
                 <element signature="method#deleteNonExistingUser#0;class#DeleteUserTest#0" />
@@ -58,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetUserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="40" column="53" selection-start-line="37" selection-start-column="8" selection-end-line="40" selection-end-column="53" />
+            <state relative-caret-position="527">
+              <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,9 +86,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="219">
+              <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#317#318#0" expanded="true" />
                 <element signature="e#357#358#0" expanded="true" />
               </folding>
@@ -98,12 +98,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testutils/ExtentReporterNG.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/SignUpTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
-              <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="86" selection-end-column="7" />
+            <state relative-caret-position="425">
+              <caret line="113" column="53" lean-forward="true" selection-start-line="113" selection-start-column="53" selection-end-line="113" selection-end-column="53" />
               <folding>
-                <element signature="method#beforeClass#0;class#SignUpTest#0" />
                 <element signature="method#signUpCornerCases#0;class#SignUpTest#0" />
                 <element signature="e#2228#2855#1" />
                 <element signature="method#testData#0;class#SignUpTest#0" />
@@ -117,25 +137,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/UpdateUserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testutils/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="158">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="method#setProperties#0;class#TestBase#0" />
-                <element signature="method#BeforeMethod#0;class#TestBase#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
                 <element signature="e#1064#1197#1" />
                 <element signature="method#endTest#0;class#TestBase#0" />
                 <element signature="e#2201#2409#1" />
@@ -143,17 +152,7 @@
                 <element signature="e#2663#2754#1" />
                 <element signature="n#!!block;n#getTestName#0;n#TestBase#0" />
                 <element signature="method#tearDownSuite#0;class#TestBase#0" />
-                <element signature="method#reportLog#0;class#TestBase#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/data/env.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -198,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/test/java/waesqa/IntegrationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/WaesUtisl.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/ExtentReporterNG.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/WaesProperties.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/WaesUtils.java" />
@@ -215,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/test/java/testutils/ExtentReporterNG.java" />
         <option value="$PROJECT_DIR$/testng2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/data/env.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/testutils/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/waesqa/DeleteUserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/waesqa/GetAllUsersTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/waesqa/GetUserTest.java" />
@@ -223,6 +220,8 @@
         <option value="$PROJECT_DIR$/src/test/java/testutils/TestCasesData.java" />
         <option value="$PROJECT_DIR$/src/test/java/waesqa/SignUpTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/waesqa/UpdateUserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testutils/TestBase.java" />
       </list>
     </option>
   </component>
@@ -309,17 +308,6 @@
             </path>
             <path>
               <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="waes-test" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="waes-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -330,7 +318,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570490234773" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570501521054" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -370,7 +358,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.UpdateUserTest.updateUserRegressionCases">
+  <component name="RunManager" selected="TestNG.SignUpTest">
+    <configuration name="D:/Varios/Entrevistas/waes-test/testng2.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="waes-test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng2.xml" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="test-output" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="D:/Varios/Entrevistas/waes-test/testng.xml" type="TestNG" nameIsGenerated="true">
       <module name="waes-test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -392,7 +399,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.createUserAndLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetUserTest.getUserPositive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="waes-test" />
       <extension name="coverage">
         <pattern>
@@ -402,8 +409,8 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="waesqa" />
-      <option name="MAIN_CLASS_NAME" value="waesqa.LoginTest" />
-      <option name="METHOD_NAME" value="createUserAndLogin" />
+      <option name="MAIN_CLASS_NAME" value="waesqa.GetUserTest" />
+      <option name="METHOD_NAME" value="getUserPositive" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -419,34 +426,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.loginPositive" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="waes-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="waesqa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="waesqa" />
-      <option name="MAIN_CLASS_NAME" value="waesqa.LoginTest" />
-      <option name="METHOD_NAME" value="loginPositive" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="test-output" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTest.signUpPositive" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="waes-test" />
       <extension name="coverage">
         <pattern>
@@ -457,9 +437,8 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="waesqa" />
       <option name="MAIN_CLASS_NAME" value="waesqa.SignUpTest" />
-      <option name="METHOD_NAME" value="signUpPositive" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="test-output" />
       <option name="TEST_SEARCH_SCOPE">
@@ -573,11 +552,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignUpTest" />
+        <item itemvalue="TestNG.D:/Varios/Entrevistas/waes-test/testng2.xml" />
+        <item itemvalue="TestNG.GetUserTest.getUserPositive" />
         <item itemvalue="TestNG.UpdateUserTest.updateUserRegressionCases" />
         <item itemvalue="TestNG.UpdateUserTest.updateUserPositive" />
-        <item itemvalue="TestNG.SignUpTest.signUpPositive" />
-        <item itemvalue="TestNG.LoginTest.createUserAndLogin" />
-        <item itemvalue="TestNG.LoginTest.loginPositive" />
       </list>
     </recent_temporary>
   </component>
@@ -595,15 +574,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SignUpTest_signUpPositive - 2019.10.07 at 18h 58m 11s.xml">
-      <configuration name="SignUpTest.signUpPositive" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SignUpTest_signUpPositive - 2019.10.07 at 18h 58m 18s.xml">
-      <configuration name="SignUpTest.signUpPositive" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 14m 18s.xml">
-      <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="UpdateUserTest_updateUserPositive - 2019.10.07 at 19h 14m 47s.xml">
       <configuration name="UpdateUserTest.updateUserPositive" configurationId="TestNG" />
     </history-entry>
@@ -625,11 +595,21 @@
     <history-entry file="UpdateUserTest_updateUserRegressionCases - 2019.10.07 at 19h 22m 23s.xml">
       <configuration name="UpdateUserTest.updateUserRegressionCases" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="GetUserTest_getUserPositive - 2019.10.07 at 23h 11m 25s.xml">
+      <configuration name="GetUserTest.getUserPositive" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Varios_Entrevistas_waes-test_testng2_xml - 2019.10.07 at 23h 21m 48s.xml">
+      <configuration name="D:/Varios/Entrevistas/waes-test/testng2.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SignUpTest - 2019.10.07 at 23h 22m 58s.xml">
+      <configuration name="SignUpTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22921109" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -638,7 +618,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30010834" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3217768" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36619717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -686,16 +666,6 @@
     </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java</url>
-          <line>79</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
         <watch expression="res.getStatusCode()" language="JAVA" />
@@ -1007,13 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1051,35 +1014,6 @@
     <entry file="file://$PROJECT_DIR$/waes-logs.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/ExtentReporterNG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="method#setProperties#0;class#TestBase#0" />
-            <element signature="method#BeforeMethod#0;class#TestBase#0" />
-            <element signature="e#1064#1197#1" />
-            <element signature="method#endTest#0;class#TestBase#0" />
-            <element signature="e#2201#2409#1" />
-            <element signature="e#2462#2613#1" />
-            <element signature="e#2663#2754#1" />
-            <element signature="n#!!block;n#getTestName#0;n#TestBase#0" />
-            <element signature="method#tearDownSuite#0;class#TestBase#0" />
-            <element signature="method#reportLog#0;class#TestBase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/data/env.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1087,29 +1021,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/DeleteUserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/UpdateUserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+        <state relative-caret-position="-811">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
-            <element signature="method#beforeClass#0;class#DeleteUserTest#0" />
-            <element signature="method#deletePositive#0;class#DeleteUserTest#0" />
-            <element signature="e#1471#1537#0" />
-            <element signature="method#deleteNonExistingUser#0;class#DeleteUserTest#0" />
-            <element signature="method#deleteInvalidAuth#0;class#DeleteUserTest#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetAllUsersTest.java">
+    <entry file="file://$PROJECT_DIR$/testng2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="85">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
           <folding>
-            <element signature="method#beforeClass#0;class#GetAllUsersTest#0" />
-            <element signature="method#getAllUsersPositive#0;class#GetAllUsersTest#0" />
-            <element signature="method#getAllUsersInvalidAuth#0;class#GetAllUsersTest#0" />
-            <element signature="method#getAllUsersInvalidAuth#1;class#GetAllUsersTest#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/SignUpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="113" column="53" lean-forward="true" selection-start-line="113" selection-start-column="53" selection-end-line="113" selection-end-column="53" />
+          <folding>
+            <element signature="method#signUpCornerCases#0;class#SignUpTest#0" />
+            <element signature="e#2228#2855#1" />
+            <element signature="method#testData#0;class#SignUpTest#0" />
+            <element signature="e#2480#3221#1" />
+            <element signature="e#2601#3211#1" />
+            <element signature="e#2743#2998#1" />
+            <element signature="e#3031#3197#1" />
           </folding>
         </state>
       </provider>
@@ -1129,6 +1081,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetAllUsersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="method#beforeClass#0;class#GetAllUsersTest#0" />
+            <element signature="method#getAllUsersPositive#0;class#GetAllUsersTest#0" />
+            <element signature="method#getAllUsersInvalidAuth#0;class#GetAllUsersTest#0" />
+            <element signature="method#getAllUsersInvalidAuth#1;class#GetAllUsersTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/DeleteUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="method#deletePositive#0;class#DeleteUserTest#0" />
+            <element signature="e#1471#1537#0" />
+            <element signature="method#deleteNonExistingUser#0;class#DeleteUserTest#0" />
+            <element signature="method#deleteInvalidAuth#0;class#DeleteUserTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testutils/TestCasesData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -1136,50 +1124,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/GetUserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/ExtentReporterNG.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="40" column="53" selection-start-line="37" selection-start-column="8" selection-end-line="40" selection-end-column="53" />
+        <state relative-caret-position="323">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/WaesHeroesAPIs.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testutils/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/SignUpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="86" selection-end-column="7" />
-          <folding>
-            <element signature="method#beforeClass#0;class#SignUpTest#0" />
-            <element signature="method#signUpCornerCases#0;class#SignUpTest#0" />
-            <element signature="e#2228#2855#1" />
-            <element signature="method#testData#0;class#SignUpTest#0" />
-            <element signature="e#2480#3221#1" />
-            <element signature="e#2601#3211#1" />
-            <element signature="e#2743#2998#1" />
-            <element signature="e#3031#3197#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/waesqa/UpdateUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
+        <state relative-caret-position="158">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1064#1197#1" />
+            <element signature="method#endTest#0;class#TestBase#0" />
+            <element signature="e#2201#2409#1" />
+            <element signature="e#2462#2613#1" />
+            <element signature="e#2663#2754#1" />
+            <element signature="n#!!block;n#getTestName#0;n#TestBase#0" />
+            <element signature="method#tearDownSuite#0;class#TestBase#0" />
           </folding>
         </state>
       </provider>

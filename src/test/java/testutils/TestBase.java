@@ -17,8 +17,6 @@ import utils.WaesHeroesAPIs;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-//@Listeners(testutils.ExtentReporterNG.class)
-
 public class TestBase implements ITest {
 
     protected WaesProperties waesProperties;
@@ -63,6 +61,7 @@ public class TestBase implements ITest {
         ctx.setAttribute("testName", testNameStr);
         test = extent.startTest(testNameStr,testNameStr);
 
+        waesHeroesAPIs.test = test;
         logger.info("RUNNING TEST: *** " + testNameStr + " ***");
         reportLog("RUNNING TEST: *** " + testNameStr + " ***");
     }
@@ -98,7 +97,6 @@ public class TestBase implements ITest {
         test.log(LogStatus.INFO, message);
         logger.info("Message: " + message);
         Reporter.log(message);
-
     }
 
 }
