@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+<testng-results ignored="1" total="22" passed="21" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[RUNNING TEST: *** signUpPositive ***]]>
-    </line>
     <line>
       <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
     </line>
@@ -11,7 +8,7 @@
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 148","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser148@wearewaes.com","superpower":"Henki dama","username":"test-user-148"}]]>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
@@ -20,13 +17,13 @@
       <![CDATA[Code -> 201]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":0,"name":"New test user 148","username":"test-user-148","email":"newtestuser148@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":0,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
       <![CDATA[REQUEST: GET User - /waesheroes/api/v1/users/details]]>
     </line>
     <line>
-      <![CDATA[Query params -> username: test-user-148]]>
+      <![CDATA[Query params -> username: test-user-108]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
@@ -35,366 +32,653 @@
       <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":24,"name":"New test user 148","username":"test-user-148","email":"newtestuser148@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_WithId ***]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_WithId ***]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
     </line>
     <line>
-      <![CDATA[Header -> Content-Type: application/json]]>
-    </line>
-    <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user85","dateOfBirth":"2018-12-12","id":905,"isAdmin":false,"email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","username":"test-user-488"}]]>
-    </line>
-    <line>
-      <![CDATA[RESPONSE: ]]>
-    </line>
-    <line>
-      <![CDATA[Code -> 201]]>
-    </line>
-    <line>
-      <![CDATA[Body -> {"id":905,"name":"test user85","username":"test-user-488","email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","dateOfBirth":"2018-12-12","isAdmin":false}]]>
-    </line>
-    <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyName ***]]>
-    </line>
-    <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user148","dateOfBirth":"2018-12-12","id":918,"isAdmin":false,"email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","username":"test-user-722"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":918,"name":"test user148","username":"test-user-722","email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyUsername ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyName ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user510","dateOfBirth":"2018-12-12","id":555,"isAdmin":false,"email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","username":"test-user-884"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":555,"name":"test user510","username":"test-user-884","email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyEmail ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyUsername ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user228","dateOfBirth":"2018-12-12","id":490,"isAdmin":false,"email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","username":"test-user-58"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":490,"name":"test user228","username":"test-user-58","email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptySuperpower ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyEmail ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user825","dateOfBirth":"2018-12-12","id":551,"isAdmin":false,"email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","username":"test-user-618"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":551,"name":"test user825","username":"test-user-618","email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyDateOfBirth ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptySuperpower ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user963","dateOfBirth":"2018-12-12","id":812,"isAdmin":false,"email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","username":"test-user-178"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":812,"name":"test user963","username":"test-user-178","email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyIsAdmin ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyDateOfBirth ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user733","dateOfBirth":"2018-12-12","id":761,"isAdmin":false,"email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","username":"test-user-23"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":761,"name":"test user733","username":"test-user-23","email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":null,"isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyPassword ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyIsAdmin ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user815","dateOfBirth":"2018-12-12","id":32,"isAdmin":false,"email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","username":"test-user-170"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":"","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":32,"name":"test user815","username":"test-user-170","email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":null}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingName ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyPassword ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user146","dateOfBirth":"2018-12-12","id":467,"isAdmin":false,"email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","username":"test-user-664"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":467,"name":"test user146","username":"test-user-664","email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingUsername ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingName ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user478","dateOfBirth":"2018-12-12","id":817,"isAdmin":false,"email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","username":"test-user-405"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":817,"name":"test user478","username":"test-user-405","email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":null,"username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingEmail ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingUsername ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user593","dateOfBirth":"2018-12-12","id":732,"isAdmin":false,"email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","username":"test-user-999"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":732,"name":"test user593","username":"test-user-999","email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingSuperpower ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingEmail ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user930","dateOfBirth":"2018-12-12","id":208,"isAdmin":false,"email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","username":"test-user-61"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 400]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":208,"name":"test user930","username":"test-user-61","email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"timestamp":"2019-10-08T23:32:25.299+0000","status":400,"error":"Bad Request","message":"Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction","path":"uri=/waesheroes/api/v1/users"}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingDateOfBirth ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingSuperpower ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user257","dateOfBirth":"2018-12-12","id":861,"isAdmin":false,"email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","username":"test-user-371"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":861,"name":"test user257","username":"test-user-371","email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":null,"dateOfBirth":"2019-10-06","isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingIsAdmin ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingDateOfBirth ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user743","dateOfBirth":"2018-12-12","id":377,"isAdmin":false,"email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","username":"test-user-302"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":377,"name":"test user743","username":"test-user-302","email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":null,"isAdmin":false}]]>
     </line>
     <line>
-      <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingPassword ***]]>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
     <line>
-      <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingIsAdmin ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
     </line>
     <line>
       <![CDATA[Header -> Content-Type: application/json]]>
     </line>
     <line>
-      <![CDATA[Body -> {"password":"waestestpass","name":"test user912","dateOfBirth":"2018-12-12","id":12,"isAdmin":false,"email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","username":"test-user-923"}]]>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
     </line>
     <line>
       <![CDATA[RESPONSE: ]]>
     </line>
     <line>
-      <![CDATA[Code -> 201]]>
+      <![CDATA[Code -> 200]]>
     </line>
     <line>
-      <![CDATA[Body -> {"id":12,"name":"test user912","username":"test-user-923","email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":null}]]>
+    </line>
+    <line>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingPassword ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Content-Type: application/json]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+    </line>
+    <line>
+      <![CDATA[RESPONSE: ]]>
+    </line>
+    <line>
+      <![CDATA[Code -> 200]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+    </line>
+    <line>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingNameAndUsername ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Content-Type: application/json]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+    </line>
+    <line>
+      <![CDATA[RESPONSE: ]]>
+    </line>
+    <line>
+      <![CDATA[Code -> 200]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"id":5,"name":null,"username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+    </line>
+    <line>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingUsernameAndEmail ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Content-Type: application/json]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"superpower":"Henki dama","username":"test-user-108"}]]>
+    </line>
+    <line>
+      <![CDATA[RESPONSE: ]]>
+    </line>
+    <line>
+      <![CDATA[Code -> 400]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"timestamp":"2019-10-08T23:32:32.392+0000","status":400,"error":"Bad Request","message":"Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction","path":"uri=/waesheroes/api/v1/users"}]]>
+    </line>
+    <line>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingEmailAndSuperpower ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Content-Type: application/json]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"username":"test-user-108"}]]>
+    </line>
+    <line>
+      <![CDATA[RESPONSE: ]]>
+    </line>
+    <line>
+      <![CDATA[Code -> 400]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"timestamp":"2019-10-08T23:32:33.563+0000","status":400,"error":"Bad Request","message":"Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction","path":"uri=/waesheroes/api/v1/users"}]]>
+    </line>
+    <line>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingSuperpowerAndDoB ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Content-Type: application/json]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","username":"test-user-108"}]]>
+    </line>
+    <line>
+      <![CDATA[RESPONSE: ]]>
+    </line>
+    <line>
+      <![CDATA[Code -> 200]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":null,"dateOfBirth":null,"isAdmin":false}]]>
+    </line>
+    <line>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingDoBAndAdmin ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Content-Type: application/json]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+    </line>
+    <line>
+      <![CDATA[RESPONSE: ]]>
+    </line>
+    <line>
+      <![CDATA[Code -> 200]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":null,"isAdmin":null}]]>
+    </line>
+    <line>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+    </line>
+    <line>
+      <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingAdminAndPassword ***]]>
+    </line>
+    <line>
+      <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+    </line>
+    <line>
+      <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Content-Type: application/json]]>
+    </line>
+    <line>
+      <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+    </line>
+    <line>
+      <![CDATA[RESPONSE: ]]>
+    </line>
+    <line>
+      <![CDATA[Code -> 200]]>
+    </line>
+    <line>
+      <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":null}]]>
+    </line>
+    <line>
+      <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
     </line>
   </reporter-output>
-  <suite started-at="2019-10-07T23:22:38 ART" name="Default Suite" finished-at="2019-10-07T23:22:57 ART" duration-ms="18413">
+  <suite started-at="2019-10-08T20:32:11 ART" name="Default Suite" finished-at="2019-10-08T20:32:38 ART" duration-ms="26416">
     <groups>
     </groups>
-    <test started-at="2019-10-07T23:22:38 ART" name="waes-test" finished-at="2019-10-07T23:22:57 ART" duration-ms="18413">
-      <class name="waesqa.SignUpTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:38 ART" name="before" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:38 ART" duration-ms="88" status="PASS">
+    <test started-at="2019-10-08T20:32:11 ART" name="waes-test" finished-at="2019-10-08T20:32:38 ART" duration-ms="26416">
+      <class name="waesqa.UpdateUserTest">
+        <test-method is-config="true" signature="before()[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:11 ART" name="before" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:11 ART" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method is-config="true" signature="setProperties()[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:38 ART" name="setProperties" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:38 ART" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setProperties()[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:11 ART" name="setProperties" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:11 ART" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setProperties -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:38 ART" name="beforeClass" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:38 ART" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:38 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:38 ART" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpPositive()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@66020d69]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[RUNNING TEST: *** signUpPositive ***]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="signUpPositive()[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:38 ART" name="signUpPositive" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:40 ART" duration-ms="1245" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:11 ART" name="beforeClass" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:12 ART" duration-ms="1104" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
@@ -403,7 +687,7 @@
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 148","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser148@wearewaes.com","superpower":"Henki dama","username":"test-user-148"}]]>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
@@ -412,13 +696,13 @@
               <![CDATA[Code -> 201]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":0,"name":"New test user 148","username":"test-user-148","email":"newtestuser148@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":0,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
             </line>
             <line>
               <![CDATA[REQUEST: GET User - /waesheroes/api/v1/users/details]]>
             </line>
             <line>
-              <![CDATA[Query params -> username: test-user-148]]>
+              <![CDATA[Query params -> username: test-user-108]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
@@ -427,22 +711,35 @@
               <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":24,"name":"New test user 148","username":"test-user-148","email":"newtestuser148@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpPositive -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:40 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:40 ART" duration-ms="8" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:13 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:13 ART" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpPositive status=SUCCESS method=SignUpTest.signUpPositive()[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@23648d2d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_WithId ***]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:40 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:41 ART" duration-ms="1127" status="PASS">
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:13 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:14 ART" duration-ms="1200" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -451,96 +748,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user85","dateOfBirth":"2018-12-12","id":905,"isAdmin":false,"email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","username":"test-user-488"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user85","dateOfBirth":"2018-12-12","id":905,"isAdmin":false,"email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","username":"test-user-488"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":905,"name":"test user85","username":"test-user-488","email":"newtestuser420@wearewaes.com","superpower":"Kaoiken 970","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:40 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:40 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:14 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:14 ART" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@6b832551]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_WithId ***]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:41 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:41 ART" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_WithId status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_WithId status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:41 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:41 ART" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:14 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:14 ART" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@150d6eaf]]>
+                <![CDATA[[Ljava.lang.Object;@37c1cfa]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyName ***]]>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyName ***]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:41 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:42 ART" duration-ms="1125" status="PASS">
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:14 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:15 ART" duration-ms="1186" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -549,72 +831,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user148","dateOfBirth":"2018-12-12","id":918,"isAdmin":false,"email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","username":"test-user-722"}]]>
+                <![CDATA[{"password":"waestestpass","name":"","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user148","dateOfBirth":"2018-12-12","id":918,"isAdmin":false,"email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","username":"test-user-722"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":918,"name":"test user148","username":"test-user-722","email":"newtestuser349@wearewaes.com","superpower":"Kaoiken 176","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:42 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:42 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:15 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:15 ART" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_EmptyName status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyName status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:42 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:42 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:15 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:15 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@63124022]]>
+                <![CDATA[[Ljava.lang.Object;@2bcda694]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyUsername ***]]>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyUsername ***]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:42 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:44 ART" duration-ms="1105" status="PASS">
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:15 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:16 ART" duration-ms="1185" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -623,72 +914,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user510","dateOfBirth":"2018-12-12","id":555,"isAdmin":false,"email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","username":"test-user-884"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user510","dateOfBirth":"2018-12-12","id":555,"isAdmin":false,"email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","username":"test-user-884"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":555,"name":"test user510","username":"test-user-884","email":"newtestuser692@wearewaes.com","superpower":"Kaoiken 538","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:44 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:44 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:16 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:16 ART" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_EmptyUsername status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyUsername status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:44 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:44 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:16 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:16 ART" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@591f6f83]]>
+                <![CDATA[[Ljava.lang.Object;@2cc75b25]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyEmail ***]]>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyEmail ***]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:44 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:45 ART" duration-ms="1117" status="PASS">
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:16 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:18 ART" duration-ms="1176" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -697,72 +997,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user228","dateOfBirth":"2018-12-12","id":490,"isAdmin":false,"email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","username":"test-user-58"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user228","dateOfBirth":"2018-12-12","id":490,"isAdmin":false,"email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","username":"test-user-58"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":490,"name":"test user228","username":"test-user-58","email":"newtestuser579@wearewaes.com","superpower":"Kaoiken 98","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:45 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:45 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:18 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:18 ART" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_EmptyEmail status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyEmail status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:45 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:45 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:18 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:18 ART" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@2b44605c]]>
+                <![CDATA[[Ljava.lang.Object;@30036a18]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptySuperpower ***]]>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptySuperpower ***]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:45 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:46 ART" duration-ms="1111" status="PASS">
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:18 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:19 ART" duration-ms="1190" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -771,72 +1080,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user825","dateOfBirth":"2018-12-12","id":551,"isAdmin":false,"email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","username":"test-user-618"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user825","dateOfBirth":"2018-12-12","id":551,"isAdmin":false,"email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","username":"test-user-618"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":551,"name":"test user825","username":"test-user-618","email":"newtestuser749@wearewaes.com","superpower":"Kaoiken 426","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:46 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:46 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:19 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:19 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_EmptySuperpower status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptySuperpower status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:46 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:46 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:19 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:19 ART" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@55421b8d]]>
+                <![CDATA[[Ljava.lang.Object;@537b3b2e]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyDateOfBirth ***]]>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyDateOfBirth ***]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:46 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:47 ART" duration-ms="1124" status="PASS">
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:19 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:20 ART" duration-ms="1190" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -845,72 +1163,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user963","dateOfBirth":"2018-12-12","id":812,"isAdmin":false,"email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","username":"test-user-178"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user963","dateOfBirth":"2018-12-12","id":812,"isAdmin":false,"email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","username":"test-user-178"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":812,"name":"test user963","username":"test-user-178","email":"newtestuser96@wearewaes.com","superpower":"Kaoiken 65","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":null,"isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:47 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:47 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:20 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:20 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@24a04257]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyIsAdmin ***]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:47 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:47 ART" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_EmptyDateOfBirth status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyDateOfBirth status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:47 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:48 ART" duration-ms="1103" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:20 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:20 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1544ded3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyIsAdmin ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:20 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:21 ART" duration-ms="1172" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -919,72 +1246,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user733","dateOfBirth":"2018-12-12","id":761,"isAdmin":false,"email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","username":"test-user-23"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":"","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user733","dateOfBirth":"2018-12-12","id":761,"isAdmin":false,"email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","username":"test-user-23"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":"","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":761,"name":"test user733","username":"test-user-23","email":"newtestuser613@wearewaes.com","superpower":"Kaoiken 385","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":null}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:48 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:48 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:21 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:21 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@6615237]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_EmptyPassword ***]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:48 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:48 ART" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_EmptyIsAdmin status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyIsAdmin status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:48 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:49 ART" duration-ms="1105" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:21 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:21 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3ccb12d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_EmptyPassword ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:21 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:22 ART" duration-ms="1173" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -993,72 +1329,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user815","dateOfBirth":"2018-12-12","id":32,"isAdmin":false,"email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","username":"test-user-170"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user815","dateOfBirth":"2018-12-12","id":32,"isAdmin":false,"email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","username":"test-user-170"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":32,"name":"test user815","username":"test-user-170","email":"newtestuser91@wearewaes.com","superpower":"Kaoiken 140","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:49 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:49 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:22 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:22 ART" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_EmptyPassword status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_EmptyPassword status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:49 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:49 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:22 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:22 ART" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@eaf8427]]>
+                <![CDATA[[Ljava.lang.Object;@28b458e6]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingName ***]]>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingName ***]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:49 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:50 ART" duration-ms="1105" status="PASS">
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:22 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:23 ART" duration-ms="1170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1067,48 +1412,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user146","dateOfBirth":"2018-12-12","id":467,"isAdmin":false,"email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","username":"test-user-664"}]]>
+                <![CDATA[{"password":"waestestpass","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user146","dateOfBirth":"2018-12-12","id":467,"isAdmin":false,"email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","username":"test-user-664"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":467,"name":"test user146","username":"test-user-664","email":"newtestuser654@wearewaes.com","superpower":"Kaoiken 518","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":null,"username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:50 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:50 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:23 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:23 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_MissingName status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingName status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:50 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:51 ART" duration-ms="1100" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:23 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:23 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@221ca495]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingUsername ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:23 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:25 ART" duration-ms="1185" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1117,72 +1495,57 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user478","dateOfBirth":"2018-12-12","id":817,"isAdmin":false,"email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","username":"test-user-405"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user478","dateOfBirth":"2018-12-12","id":817,"isAdmin":false,"email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","username":"test-user-405"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":817,"name":"test user478","username":"test-user-405","email":"newtestuser265@wearewaes.com","superpower":"Kaoiken 651","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:50 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:50 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:25 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:25 ART" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@4bf4680c]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingUsername ***]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:51 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:51 ART" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_MissingUsername status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingUsername status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:51 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:52 ART" duration-ms="1103" status="PASS">
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:25 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:26 ART" duration-ms="1181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1191,96 +1554,105 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user593","dateOfBirth":"2018-12-12","id":732,"isAdmin":false,"email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","username":"test-user-999"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[400]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user593","dateOfBirth":"2018-12-12","id":732,"isAdmin":false,"email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","username":"test-user-999"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 400]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":732,"name":"test user593","username":"test-user-999","email":"newtestuser114@wearewaes.com","superpower":"Kaoiken 782","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"timestamp":"2019-10-08T23:32:25.299+0000","status":400,"error":"Bad Request","message":"Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction","path":"uri=/waesheroes/api/v1/users"}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:51 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:51 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:25 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:25 ART" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@6d6039df]]>
+                <![CDATA[[Ljava.lang.Object;@119d4443]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingEmail ***]]>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingEmail ***]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:52 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:52 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:26 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:26 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@611c3eae]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingSuperpower ***]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:52 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:52 ART" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_MissingEmail status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingEmail status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:52 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:54 ART" duration-ms="1101" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:26 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:26 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@773eca84]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingSuperpower ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:26 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:27 ART" duration-ms="1176" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1289,48 +1661,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user930","dateOfBirth":"2018-12-12","id":208,"isAdmin":false,"email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","username":"test-user-61"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user930","dateOfBirth":"2018-12-12","id":208,"isAdmin":false,"email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","username":"test-user-61"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":208,"name":"test user930","username":"test-user-61","email":"newtestuser60@wearewaes.com","superpower":"Kaoiken 609","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":null,"dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:54 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:54 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:27 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:27 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_MissingSuperpower status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingSuperpower status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:54 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:55 ART" duration-ms="1102" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:27 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:27 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7d47dfed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingDateOfBirth ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:27 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:28 ART" duration-ms="1171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1339,72 +1744,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user257","dateOfBirth":"2018-12-12","id":861,"isAdmin":false,"email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","username":"test-user-371"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user257","dateOfBirth":"2018-12-12","id":861,"isAdmin":false,"email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","username":"test-user-371"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":861,"name":"test user257","username":"test-user-371","email":"newtestuser805@wearewaes.com","superpower":"Kaoiken 332","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":null,"isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:54 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:54 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:28 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:28 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@13e00016]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingDateOfBirth ***]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:55 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:55 ART" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_MissingDateOfBirth status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingDateOfBirth status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:55 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:56 ART" duration-ms="1111" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:28 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:28 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3a38e4dc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingIsAdmin ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:28 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:29 ART" duration-ms="1179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1413,96 +1827,81 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user743","dateOfBirth":"2018-12-12","id":377,"isAdmin":false,"email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","username":"test-user-302"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user743","dateOfBirth":"2018-12-12","id":377,"isAdmin":false,"email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","username":"test-user-302"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":377,"name":"test user743","username":"test-user-302","email":"newtestuser629@wearewaes.com","superpower":"Kaoiken 949","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":null}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:55 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:55 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:29 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:29 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7b3cbe6e]]>
+                <![CDATA[[Ljava.lang.Object;@41fc0084]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingIsAdmin ***]]>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingPassword ***]]>
             </line>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:56 ART" name="BeforeMethod" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:56 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:29 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:29 ART" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void waesqa.SignUpTest.signUpRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@177ede17]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3751acd7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[RUNNING TEST: *** signUpRegressionCases_MissingPassword ***]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:56 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:56 ART" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_MissingIsAdmin status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingIsAdmin status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method signature="signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:56 ART" name="signUpRegressionCases" data-provider="signUpData" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:57 ART" duration-ms="1110" status="PASS">
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:29 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:31 ART" duration-ms="1184" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1511,52 +1910,559 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"password":"waestestpass","name":"test user912","dateOfBirth":"2018-12-12","id":12,"isAdmin":false,"email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","username":"test-user-923"}]]>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[201]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[REQUEST: POST Sign up - /waesheroes/api/v1/users]]>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
             </line>
             <line>
               <![CDATA[Header -> Content-Type: application/json]]>
             </line>
             <line>
-              <![CDATA[Body -> {"password":"waestestpass","name":"test user912","dateOfBirth":"2018-12-12","id":12,"isAdmin":false,"email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","username":"test-user-923"}]]>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
             </line>
             <line>
               <![CDATA[RESPONSE: ]]>
             </line>
             <line>
-              <![CDATA[Code -> 201]]>
+              <![CDATA[Code -> 200]]>
             </line>
             <line>
-              <![CDATA[Body -> {"id":12,"name":"test user912","username":"test-user-923","email":"newtestuser769@wearewaes.com","superpower":"Kaoiken 128","dateOfBirth":"2018-12-12","isAdmin":false}]]>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
             </line>
           </reporter-output>
-        </test-method> <!-- signUpRegressionCases -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:57 ART" name="endTest" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:57 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:31 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:31 ART" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUpRegressionCases_MissingPassword status=SUCCESS method=SignUpTest.signUpRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.SignUpTest@4a194c39] output=REQUEST: POST Sign up - /waesheroes/api/v1/users]]]>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingPassword status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:waesqa.SignUpTest@4a194c39]" started-at="2019-10-07T23:22:57 ART" name="tearDownSuite" test-instance-name="signUpRegressionCases_MissingPassword" finished-at="2019-10-07T23:22:57 ART" duration-ms="214" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:31 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:31 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@401788d5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingNameAndUsername ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:31 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:32 ART" duration-ms="1206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingNameAndUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Content-Type: application/json]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+            </line>
+            <line>
+              <![CDATA[RESPONSE: ]]>
+            </line>
+            <line>
+              <![CDATA[Code -> 200]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"id":5,"name":null,"username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:32 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:32 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingNameAndUsername status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:32 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:32 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3ec9f8d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingUsernameAndEmail ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:32 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:33 ART" duration-ms="1176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingUsernameAndEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"superpower":"Henki dama","username":"test-user-108"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Content-Type: application/json]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"superpower":"Henki dama","username":"test-user-108"}]]>
+            </line>
+            <line>
+              <![CDATA[RESPONSE: ]]>
+            </line>
+            <line>
+              <![CDATA[Code -> 400]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"timestamp":"2019-10-08T23:32:32.392+0000","status":400,"error":"Bad Request","message":"Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction","path":"uri=/waesheroes/api/v1/users"}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:33 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:33 ART" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingUsernameAndEmail status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:33 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:33 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7e0f9528]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingEmailAndSuperpower ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:33 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:34 ART" duration-ms="1153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingEmailAndSuperpower]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"username":"test-user-108"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Content-Type: application/json]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"isAdmin":false,"username":"test-user-108"}]]>
+            </line>
+            <line>
+              <![CDATA[RESPONSE: ]]>
+            </line>
+            <line>
+              <![CDATA[Code -> 400]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"timestamp":"2019-10-08T23:32:33.563+0000","status":400,"error":"Bad Request","message":"Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction","path":"uri=/waesheroes/api/v1/users"}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:34 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:34 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingEmailAndSuperpower status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:34 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:34 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5f56424d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingSuperpowerAndDoB ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:34 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:35 ART" duration-ms="1167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingSuperpowerAndDoB]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","username":"test-user-108"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Content-Type: application/json]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","id":5,"isAdmin":false,"email":"newtestuser108@wearewaes.com","username":"test-user-108"}]]>
+            </line>
+            <line>
+              <![CDATA[RESPONSE: ]]>
+            </line>
+            <line>
+              <![CDATA[Code -> 200]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":null,"dateOfBirth":null,"isAdmin":false}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:35 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:35 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingSuperpowerAndDoB status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:35 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:35 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@237b2852]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingDoBAndAdmin ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:35 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:36 ART" duration-ms="1163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingDoBAndAdmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Content-Type: application/json]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+            </line>
+            <line>
+              <![CDATA[RESPONSE: ]]>
+            </line>
+            <line>
+              <![CDATA[Code -> 200]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":null,"isAdmin":null}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:36 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:36 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingDoBAndAdmin status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestContext)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:36 ART" name="BeforeMethod" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:36 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void waesqa.UpdateUserTest.updateUserRegressionCases(java.lang.String,org.json.JSONObject,int) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@448cdb47]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69feb4d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[RUNNING TEST: *** updateUserRegressionCases_MissingAdminAndPassword ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:36 ART" name="updateUserRegressionCases" data-provider="updateUserData" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:38 ART" duration-ms="1165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MissingAdminAndPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[step 1: Perform PUT user call with parametrized payload]]>
+            </line>
+            <line>
+              <![CDATA[REQUEST: PUT User - /waesheroes/api/v1/users]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Content-Type: application/json]]>
+            </line>
+            <line>
+              <![CDATA[Header -> Authorization: Basic dGVzdC11c2VyLTEwODp3YWVzdGVzdHBhc3M=]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"password":"waestestpass","name":"New test user 108","dateOfBirth":"2019-10-06","id":5,"email":"newtestuser108@wearewaes.com","superpower":"Henki dama","username":"test-user-108"}]]>
+            </line>
+            <line>
+              <![CDATA[RESPONSE: ]]>
+            </line>
+            <line>
+              <![CDATA[Code -> 200]]>
+            </line>
+            <line>
+              <![CDATA[Body -> {"id":5,"name":"New test user 108","username":"test-user-108","email":"newtestuser108@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":null}]]>
+            </line>
+            <line>
+              <![CDATA[step 2: Validate response code and message is the expected (if necessary).]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateUserRegressionCases -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:38 ART" name="endTest" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:38 ART" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserRegressionCases_MissingAdminAndPassword status=SUCCESS method=UpdateUserTest.updateUserRegressionCases(java.lang.String, org.json.JSONObject, int)[pri:0, instance:waesqa.UpdateUserTest@5669c5fb] output=step 1: Perform PUT user call with parametrized payload]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:waesqa.UpdateUserTest@5669c5fb]" started-at="2019-10-08T20:32:38 ART" name="tearDownSuite" test-instance-name="updateUserRegressionCases_MissingAdminAndPassword" finished-at="2019-10-08T20:32:38 ART" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
-      </class> <!-- waesqa.SignUpTest -->
+      </class> <!-- waesqa.UpdateUserTest -->
     </test> <!-- waes-test -->
   </suite> <!-- Default Suite -->
 </testng-results>

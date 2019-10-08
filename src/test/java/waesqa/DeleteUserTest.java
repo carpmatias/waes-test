@@ -45,20 +45,32 @@ public class DeleteUserTest extends TestBase {
      * step 1: Create new user for removing (performed in BeforeClass).
      * step 2: Perform delete user call
      * step 3: Validate user was removed successfully.
+     * step 4: Attempt to perform GET User call passing removed username.
+     * step 5: Validate user can't be retrieved and response code and messages are the expected.
      *
      * @author Matías Cárdenas
      */
     @Test
     public void deletePositive(){
-        //step 1: Create new user for removing (performed in BeforeClass).
+        reportLog("step 1: Create new user for removing (performed in BeforeClass).");
 
-        //step 2: Perform delete user call
+        reportLog("step 2: Perform delete user call");
         Response res = waesHeroesAPIs.deleteUser(userToDelete.getUserName(), userToDelete.getPassword(), userToDelete.toJson());
 
-        //step 3: Validate user was removed successfully.
+        reportLog("step 3: Validate user was removed successfully.");
         Assert.assertEquals(res.getStatusCode(), 200);
 
         Assert.assertEquals(res.asString(), "User '" + userToDelete.getUserName() + "' removed from database.");
+
+        reportLog("step 4: Attempt to perform GET User call passing removed username.");
+        Response delResponse = waesHeroesAPIs.getUser(userToDelete.getUserName());
+
+        reportLog("step 5: Validate user can't be retrieved and response code and messages are the expected.");
+        Assert.assertEquals(delResponse.getStatusCode(),404);
+
+        JsonPath returnedBody = delResponse.jsonPath();
+        Assert.assertEquals(returnedBody.get("status"), 404);
+        Assert.assertEquals(returnedBody.get("message"), "Username " + userToDelete.getUserName() + " does not exist.");
     }
 
     /**
@@ -71,8 +83,9 @@ public class DeleteUserTest extends TestBase {
      * @author Matías Cárdenas
      */
     @Test
-    public void deleteNonExistingUser(){
-        //step 1: Build not created user.
+    public void deleteNonExistingUser(){        
+        reportLog("step 1: Build not created user.");
+
         int userNumber = new Random().nextInt(1000);
         User nonExistingUser = new User()
                 .withUserName("test-user-" + userNumber)
@@ -83,11 +96,12 @@ public class DeleteUserTest extends TestBase {
                 .withDateOfBirth("2019-10-06")
                 .withPassword("waestestpass");
 
+        reportLog("step 2: Perform delete user call with GOOD Credentials but NON-EXISTING-USER");
 
-        //step 2: Perform delete user call with GOOD Credentials but NON-EXISTING-USER
         Response res = waesHeroesAPIs.deleteUser(userToDelete.getUserName(), userToDelete.getPassword(), nonExistingUser.toJson());
 
-        //step 3: Validate proper code and error messages are received.
+        reportLog("step 3: Validate proper code and error messages are received.");
+
         Assert.assertEquals(res.getStatusCode(), 404);
 
         JsonPath returnedBody = new JsonPath(res.asString());
@@ -108,7 +122,7 @@ public class DeleteUserTest extends TestBase {
      */
     @Test
     public void deleteInvalidAuth(){
-        //step 1: Build not created user.
+        reportLog("step 1: Build not created user.");
         int userNumber = new Random().nextInt(1000);
         User nonExistingUser = new User()
                 .withUserName("test-user-" + userNumber)
@@ -120,10 +134,10 @@ public class DeleteUserTest extends TestBase {
                 .withPassword("waestestpass");
 
 
-        //step 2: Perform delete user call with BAD Credentials from NON-EXISTING-USER
+        reportLog("step 2: Perform delete user call with BAD Credentials from NON-EXISTING-USER");
         Response res = waesHeroesAPIs.deleteUser(nonExistingUser.getUserName(), nonExistingUser.getPassword(), userToDelete.toJson());
 
-        //step 3: Validate proper code and error messages are received.
+        reportLog("step 3: Validate proper code and error messages are received.");
         Assert.assertEquals(res.getStatusCode(), 401);
 
         JsonPath returnedBody = new JsonPath(res.asString());

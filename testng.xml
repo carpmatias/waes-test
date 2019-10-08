@@ -3,7 +3,36 @@
 <suite name="WAES-Suite" verbose="1" >
     <test name="Smoke">
         <classes>
-            <class name="waesqa.GetAllUsersTest"/>
+            <class name="waesqa.DeleteUserTest">
+                <methods>
+                    <include name="deletePositive"/>
+                </methods>
+            </class>
+            <class name="waesqa.GetUserTest">
+                <methods>
+                    <include name="getUserPositive"/>
+                </methods>
+            </class>
+            <class name="waesqa.GetAllUsersTest">
+                <methods>
+                    <include name="getAllUsersPositive"/>
+                </methods>
+            </class>
+            <class name="waesqa.LoginTest">
+                <methods>
+                    <include name="loginPositive"/>
+                </methods>
+            </class>
+            <class name="waesqa.SignUpTest">
+                <methods>
+                    <include name="signUpPositive"/>
+                </methods>
+            </class>
+            <class name="waesqa.UpdateUserTest">
+                <methods>
+                    <include name="updateUserPositive"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

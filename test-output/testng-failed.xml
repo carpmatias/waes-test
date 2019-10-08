@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [WAES-Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Regression(failed)">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="waes-test(failed)">
     <classes>
-      <class name="waesqa.DeleteUserTest">
+      <class name="waesqa.UpdateUserTest">
         <methods>
-          <include name="before"/>
-          <include name="deleteInvalidAuth"/>
-          <include name="tearDownSuite"/>
-          <include name="endTest"/>
-          <include name="beforeClass"/>
-          <include name="deleteNonExistingUser"/>
-          <include name="BeforeMethod"/>
-          <include name="setProperties"/>
-          <include name="deletePositive"/>
-        </methods>
-      </class> <!-- waesqa.DeleteUserTest -->
-      <class name="waesqa.SignUpTest">
-        <methods>
+          <include name="updateUserRegressionCases"/>
           <include name="before"/>
           <include name="tearDownSuite"/>
           <include name="endTest"/>
           <include name="beforeClass"/>
-          <include name="signUpRegressionCases" invocation-numbers="8"/>
           <include name="BeforeMethod"/>
           <include name="setProperties"/>
         </methods>
-      </class> <!-- waesqa.SignUpTest -->
+      </class> <!-- waesqa.UpdateUserTest -->
     </classes>
-  </test> <!-- Regression(failed) -->
-</suite> <!-- Failed suite [WAES-Suite] -->
+  </test> <!-- waes-test(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="WAES-Suite" verbose="1" >
+    <test name="FullRegression">
+        <packages>
+            <package name="waesqa" />
+        </packages>
+    </test>
+</suite>

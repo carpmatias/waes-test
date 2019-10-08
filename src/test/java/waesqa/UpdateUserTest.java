@@ -46,7 +46,6 @@ public class UpdateUserTest extends TestBase {
         userToUpdate.withId(Integer.parseInt(returnedBody.get("id").toString()));
     }
 
-
     /**
      * TC: updateUserPositive
      *
@@ -60,15 +59,15 @@ public class UpdateUserTest extends TestBase {
      */
     @Test
     public void updateUserPositive(){
-        // step 1: Set new fields values to update user
+        reportLog("step 1: Set new fields values to update user");
         userToUpdate.withDateOfBirth("2018-10-06")
                     .withName("New name positive")
                     .withSuperpower("Kaioken");
 
-        // step 2: Perform PUT user call.
+        reportLog("step 2: Perform PUT user call.");
         Response res = waesHeroesAPIs.putUser(userToUpdate.getUserName(), userToUpdate.getPassword(), userToUpdate.toJson());
 
-        // step 3: Validate user was updated successfully.
+        reportLog("step 3: Validate user was updated successfully.");
         Assert.assertEquals(res.getStatusCode(),200);
 
         JsonPath returnedBody = res.jsonPath();
@@ -79,10 +78,10 @@ public class UpdateUserTest extends TestBase {
         Assert.assertEquals(returnedBody.get("isAdmin"), userToUpdate.isAdmin());
         Assert.assertEquals(returnedBody.get("superpower"), userToUpdate.getSuperpower());
 
-        // step 4: Perform GET User call for created user.
+        reportLog("step 4: Perform GET User call for created user.");
         res = waesHeroesAPIs.getUser(userToUpdate.getUserName());
 
-        // step 5: Validate user is retrieved successfully with updated fields
+        reportLog("step 5: Validate user is retrieved successfully with updated fields");
         Assert.assertEquals(res.getStatusCode(),200);
 
         returnedBody = res.jsonPath();
@@ -93,7 +92,6 @@ public class UpdateUserTest extends TestBase {
         Assert.assertEquals(returnedBody.get("isAdmin"), userToUpdate.isAdmin());
         Assert.assertEquals(returnedBody.get("superpower"), userToUpdate.getSuperpower());
     }
-
 
     /**
      * TC: updateUserRegressionCases
@@ -109,26 +107,28 @@ public class UpdateUserTest extends TestBase {
      */
     @Test(dataProvider = "updateUserData")
     public void updateUserRegressionCases(String scenario, JSONObject requestPayload, int expectedCode) throws InterruptedException {
-        // step 1: Perform PUT user call with parametrized payload
+        reportLog("step 1: Perform PUT user call with parametrized payload");
         Response res = waesHeroesAPIs.putUser(userToUpdate.getUserName(),userToUpdate.getPassword(), requestPayload);
 
-        // step 2: Validate response code and message is the expected (if necessary).
+        reportLog("step 2: Validate response code and message is the expected (if necessary).");
         Assert.assertEquals(res.getStatusCode(),expectedCode);
 
-        //If we expected to success, validate response payload.
         if(expectedCode==200) {
             JsonPath returnedBody = res.jsonPath();
             Assert.assertEquals(returnedBody.get("username"), requestPayload.get("username"));
-            Assert.assertEquals(returnedBody.get("name"), requestPayload.get("name"));
-            Assert.assertEquals(returnedBody.get("email"), requestPayload.get("email"));
-            Assert.assertEquals(returnedBody.get("dateOfBirth"), requestPayload.get("dateOfBirth"));
-            Assert.assertEquals(returnedBody.get("isAdmin"), requestPayload.get("isAdmin"));
-            Assert.assertEquals(returnedBody.get("superpower"), requestPayload.get("superpower"));
+            if(requestPayload.has("name"))
+                Assert.assertEquals(returnedBody.get("name"), requestPayload.getString("name"));
+            if(requestPayload.has("email"))
+                Assert.assertEquals(returnedBody.get("email"), requestPayload.get("email"));
+            if(requestPayload.has("dateOfBirth"))
+                Assert.assertEquals(returnedBody.get("dateOfBirth"), requestPayload.get("dateOfBirth").toString().equals("") ? null : requestPayload.get("dateOfBirth"));
+            if(requestPayload.has("isAdmin"))
+                Assert.assertEquals(returnedBody.get("isAdmin"), requestPayload.get("isAdmin").toString().equals("") ? null : requestPayload.get("isAdmin"));
+            if(requestPayload.has("superpower"))
+                Assert.assertEquals(returnedBody.get("superpower"), requestPayload.get("superpower"));
         }
         Thread.sleep(1000);
     }
-
-
 
     @DataProvider(name = "updateUserData")
     public Object[][] testData() throws IOException, InvalidFormatException {
@@ -151,7 +151,7 @@ public class UpdateUserTest extends TestBase {
                         payload.put("password", userToUpdate.getPassword());
 
                     if(!retrievedData[row][col].toString().equals("MISSING"))
-                        payload.put(WaesUtils.getKeyForIndex(col), retrievedData[row][col].toString().equals("EMPTY") ? "" : WaesUtils.getDefaultKeyValue(WaesUtils.getKeyForIndex(col)));
+                        payload.put(WaesUtils.getKeyForIndex(col), retrievedData[row][col].toString().equals("EMPTY") ? "" : getUserToUpdateKeyValue(WaesUtils.getKeyForIndex(col)));
                 }
 
                 if(col == 9) {
@@ -164,5 +164,18 @@ public class UpdateUserTest extends TestBase {
         return testData;
     }
 
+    public Object getUserToUpdateKeyValue(String key){
+        switch(key){
+            case "id": return userToUpdate.getId();
+            case "name": return userToUpdate.getName();
+            case "username": return userToUpdate.getUserName();
+            case "superpower": return userToUpdate.getSuperpower();
+            case "email": return userToUpdate.getEmail();
+            case "dateOfBirth": return userToUpdate.getDateOfBirth();
+            case "isAdmin": return userToUpdate.isAdmin();
+            case "password": return userToUpdate.getPassword();
+            default: return "";
+        }
+    }
 
 }

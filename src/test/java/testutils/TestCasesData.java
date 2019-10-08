@@ -18,6 +18,13 @@ public class TestCasesData {
         em = new ExcelManager(System.getProperty("user.dir") + "\\src\\main\\java\\data\\waesdata.xlsx");
     }
 
+    /**
+     * Method for retrieving tests data from Excel file
+     *
+     * @param testName used to specify the sheet to take the data from
+     *
+     * @author Matías Cárdenas
+     */
     public Object[][] getTestData(String testName) throws IOException, InvalidFormatException {
         Sheet testSheet = em.getExcelSheet(testName);
 

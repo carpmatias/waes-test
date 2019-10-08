@@ -24,7 +24,6 @@ public class GetUserTest extends TestBase {
                             .withId(2);
     }
 
-
     /**
      * TC: getUserPositive
      *
@@ -34,10 +33,10 @@ public class GetUserTest extends TestBase {
      */
     @Test
     public void getUserPositive(){
-        // step 1: Perform GET User call for an existing user.
+        reportLog("step 1: Perform GET User call for an existing user.");
         Response res = waesHeroesAPIs.getUser("dev");
 
-        // step 2: Validate user is retrieved successfully.
+        reportLog("step 2: Validate user is retrieved successfully.");
         Assert.assertEquals(res.getStatusCode(),200);
 
         JsonPath returnedBody = res.jsonPath();
@@ -49,7 +48,6 @@ public class GetUserTest extends TestBase {
         Assert.assertEquals(returnedBody.get("isAdmin"), existingUser.isAdmin());
         Assert.assertEquals(returnedBody.get("superpower"), existingUser.getSuperpower());
     }
-
 
     /**
      * TC: getNonExistingUser
@@ -63,18 +61,17 @@ public class GetUserTest extends TestBase {
     public void getNonExistingUser(){
         String userName = "non-existing-user";
 
-        // step 1: Attempt to perform GET User call passing a non-existing username.
+        reportLog("step 1: Attempt to perform GET User call passing a non-existing username.");
         Response res = waesHeroesAPIs.getUser(userName);
 
 
-        // step 2: Validate user can't be retrieved and response code and messages are the expected.
+        reportLog("step 2: Validate user can't be retrieved and response code and messages are the expected.");
         Assert.assertEquals(res.getStatusCode(),404);
 
         JsonPath returnedBody = res.jsonPath();
         Assert.assertEquals(returnedBody.get("status"), 404);
         Assert.assertEquals(returnedBody.get("message"), "Username " + userName + " does not exist.");
     }
-
 
     /**
      * TC: getEmptyUser
@@ -86,10 +83,10 @@ public class GetUserTest extends TestBase {
      */
     @Test
     public void getEmptyUser(){
-        // step 1: Attempt to perform GET User call passing an empty username.
+        reportLog("step 1: Attempt to perform GET User call passing an empty username.");
         Response res = waesHeroesAPIs.getUser("");
 
-        // step 2: Validate user can't be retrieved and response code and messages are the expected.
+        reportLog("step 2: Validate user can't be retrieved and response code and messages are the expected.");
         Assert.assertEquals(res.getStatusCode(),404);
 
         JsonPath returnedBody = res.jsonPath();

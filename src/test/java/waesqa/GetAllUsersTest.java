@@ -39,15 +39,15 @@ public class GetAllUsersTest extends TestBase {
      */
     @Test
     public void getAllUsersPositive(){
-        // step 1: Perform call to retrieve data from all users (using existing admin user).
+        reportLog("step 1: Perform call to retrieve data from all users (using existing admin user).");
         Response res = waesHeroesAPIs.getAllUsers(waesProperties.getUsersUsername, waesProperties.getUsersPassword);
 
-        // step 2: Validate users are retrieved successfully.
+        reportLog("step 2: Validate users are retrieved successfully.");
         Assert.assertEquals(res.getStatusCode(),200);
 
         JsonPath returnedBody = new JsonPath(res.asString());
 
-        //Validate one user JsonObject and its structure.
+        reportLog("Validate one user JsonObject and its structure.");
         Assert.assertEquals(returnedBody.get("id[1]"), existingUser.getId());
         Assert.assertEquals(returnedBody.get("username[1]"), existingUser.getUserName());
         Assert.assertEquals(returnedBody.get("name[1]"), existingUser.getName());
@@ -68,10 +68,10 @@ public class GetAllUsersTest extends TestBase {
      */
     @Test
     public void getAllUsersInvalidAuth(){
-        // step 1: Attempt to retrieve all users with invalid (non-existing) credentials.
+        reportLog("step 1: Attempt to retrieve all users with invalid (non-existing) credentials.");
         Response res = waesHeroesAPIs.getAllUsers("invalid-user", "invalid-pass");
 
-        // step 2: Validate proper response code and message is received.
+        reportLog("step 2: Validate proper response code and message is received.");
         Assert.assertEquals(res.getStatusCode(),401);
 
         JsonPath returnedBody = new JsonPath(res.asString());
@@ -93,7 +93,7 @@ public class GetAllUsersTest extends TestBase {
      */
     @Test
     public void createNewAdminUserAndGetAllUsers(){
-        // step 1: Attempt to retrieve all users with invalid (non-existing) credentials.
+        reportLog("step 1: Attempt to retrieve all users with invalid (non-existing) credentials.");
         int userNumber = new Random().nextInt(1000);
         User userToCreate = new User();
         userToCreate.withUserName("test-user-" + userNumber)
@@ -108,13 +108,13 @@ public class GetAllUsersTest extends TestBase {
 
         Assert.assertEquals(res.getStatusCode(),201);
 
-        // step 2: Attempt to retrieve all users with the new user credentials.
+        reportLog("step 2: Attempt to retrieve all users with the new user credentials.");
         res = waesHeroesAPIs.getAllUsers(userToCreate.getUserName(), userToCreate.getPassword());
 
-        // step 3: Validate proper response code and message is received.
+        reportLog("step 3: Validate proper response code and message is received.");
         Assert.assertEquals(res.getStatusCode(),403);
 
-        // No quite sure if it would be the expected behavior, considering the user is admin?
+        //No quite sure if it would be the expected behavior, considering the user is admin?
         JsonPath returnedBody = new JsonPath(res.asString());
 
         Assert.assertEquals(returnedBody.get("status"), 403);

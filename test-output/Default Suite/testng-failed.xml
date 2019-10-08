@@ -5,12 +5,12 @@
     <classes>
       <class name="waesqa.UpdateUserTest">
         <methods>
+          <include name="updateUserRegressionCases"/>
           <include name="before"/>
           <include name="tearDownSuite"/>
           <include name="endTest"/>
           <include name="beforeClass"/>
           <include name="BeforeMethod"/>
-          <include name="updateUserPositive"/>
           <include name="setProperties"/>
         </methods>
       </class> <!-- waesqa.UpdateUserTest -->

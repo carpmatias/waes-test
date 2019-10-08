@@ -23,6 +23,15 @@ public class WaesHeroesAPIs {
          this.baserUrl = baseUrl;
     }
 
+    /**
+     *
+     * GET User endpoint - /waesheroes/api/v1/users/details
+     * Retrieves the specified user.
+     *
+     * @param username
+     *
+     * @author Matías Cárdenas
+     */
     public Response getUser(String username){
         RestAssured.baseURI = this.baserUrl;
         Response res = given()
@@ -42,6 +51,17 @@ public class WaesHeroesAPIs {
         return res;
     }
 
+    /**
+     *
+     * GET All users endpoint - /waesheroes/api/v1/users/all
+     * Retrieves all the users
+     *
+     * @param username
+     * @param password
+     *
+     * @author Matías Cárdenas
+     *
+     */
     public Response getAllUsers(String username, String password){
         RestAssured.baseURI = this.baserUrl;
         String key = WaesUtils.base64Encode(username + ":" + password);
@@ -63,6 +83,16 @@ public class WaesHeroesAPIs {
         return res;
     }
 
+    /**
+     *
+     * GET Login endpoint - /waesheroes/api/v1/users/access
+     *
+     * @param username
+     * @param password
+     *
+     * @author Matías Cárdenas
+     *
+     */
     public Response getLogin(String username, String password){
         RestAssured.baseURI = this.baserUrl;
         String key = WaesUtils.base64Encode(username + ":" + password);
@@ -85,6 +115,15 @@ public class WaesHeroesAPIs {
         return res;
     }
 
+    /**
+     *
+     * POST Sign up - /waesheroes/api/v1/users/access
+     *
+     * @param body Payload with user to create.
+     *
+     * @author Matías Cárdenas
+     *
+     */
     public Response postSignUp(JSONObject body){
         RestAssured.baseURI = this.baserUrl;
 
@@ -107,6 +146,17 @@ public class WaesHeroesAPIs {
         return res;
     }
 
+    /**
+     *
+     * PUT User endpoint - /waesheroes/api/v1/users
+     *
+     * @param username
+     * @param password
+     * @param body Payload with user data to update.
+     *
+     * @author Matías Cárdenas
+     *
+     */
     public Response putUser(String username, String password, JSONObject body){
         RestAssured.baseURI = this.baserUrl;
         String key = WaesUtils.base64Encode(username + ":" + password);
@@ -132,6 +182,17 @@ public class WaesHeroesAPIs {
         return res;
     }
 
+    /**
+     *
+     * DEL User endpoint - /waesheroes/api/v1/users
+     *
+     * @param username
+     * @param password
+     * @param body Payload with user to delete.
+     *
+     * @author Matías Cárdenas
+     *
+     */
     public Response deleteUser(String username, String password, JSONObject body){
         RestAssured.baseURI = this.baserUrl;
         String key = WaesUtils.base64Encode(username + ":" + password);

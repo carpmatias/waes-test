@@ -1,45 +1,141 @@
-<h2>Reporter output</h2><table><tr><td>RUNNING TEST: *** deleteInvalidAuth ***</td></tr>
+<h2>Reporter output</h2><table><tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 713","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser713@wearewaes.com","superpower":"Superpower 713","username":"test-user-713"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":0,"name":"New test user 713","username":"test-user-713","email":"newtestuser713@wearewaes.com","superpower":"Superpower 713","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** deleteInvalidAuth ***</td></tr>
+<tr><td>REQUEST: DEL User - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Header -> Authorization: Basic dGVzdC11c2VyLTM2MTp3YWVzdGVzdHBhc3M=</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 713","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser713@wearewaes.com","superpower":"Superpower 713","username":"test-user-713"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 401</td></tr>
+<tr><td>Body -> {"timestamp":"2019-10-08T20:18:06.132+0000","status":401,"error":"Unauthorized","message":"Bad credentials","path":"/waesheroes/api/v1/users"}</td></tr>
 <tr><td>RUNNING TEST: *** deleteNonExistingUser ***</td></tr>
+<tr><td>REQUEST: DEL User - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Header -> Authorization: Basic dGVzdC11c2VyLTcxMzp3YWVzdGVzdHBhc3M=</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 278","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser278@wearewaes.com","superpower":"Superpower 278","username":"test-user-278"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 404</td></tr>
+<tr><td>Body -> {"timestamp":"2019-10-08T20:18:06.267+0000","status":404,"error":"Not Found","message":"Username test-user-278 does not exist.","path":"uri=/waesheroes/api/v1/users"}</td></tr>
 <tr><td>RUNNING TEST: *** deletePositive ***</td></tr>
-<tr><td>RUNNING TEST: *** createNewAdminUserAndGetAllUsers ***</td></tr>
-<tr><td>RUNNING TEST: *** getAllUsersInvalidAuth ***</td></tr>
-<tr><td>RUNNING TEST: *** getAllUsersPositive ***</td></tr>
+<tr><td>REQUEST: DEL User - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Header -> Authorization: Basic dGVzdC11c2VyLTcxMzp3YWVzdGVzdHBhc3M=</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 713","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser713@wearewaes.com","superpower":"Superpower 713","username":"test-user-713"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> User 'test-user-713' removed from database.</td></tr>
+<tr><td>REQUEST: GET User - /waesheroes/api/v1/users/details</td></tr>
+<tr><td>Query params -> username: test-user-713</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 404</td></tr>
+<tr><td>Body -> {"timestamp":"2019-10-08T20:18:06.452+0000","status":404,"error":"Not Found","message":"Username test-user-713 does not exist.","path":"uri=/waesheroes/api/v1/users/details"}</td></tr>
 <tr><td>RUNNING TEST: *** getEmptyUser ***</td></tr>
+<tr><td>REQUEST: GET User - /waesheroes/api/v1/users/details</td></tr>
+<tr><td>Query params -> username: </td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 404</td></tr>
+<tr><td>Body -> {"timestamp":"2019-10-08T20:18:06.517+0000","status":404,"error":"Not Found","message":"Username  does not exist.","path":"uri=/waesheroes/api/v1/users/details"}</td></tr>
 <tr><td>RUNNING TEST: *** getNonExistingUser ***</td></tr>
+<tr><td>REQUEST: GET User - /waesheroes/api/v1/users/details</td></tr>
+<tr><td>Query params -> username: non-existing-user</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 404</td></tr>
+<tr><td>Body -> {"timestamp":"2019-10-08T20:18:06.563+0000","status":404,"error":"Not Found","message":"Username non-existing-user does not exist.","path":"uri=/waesheroes/api/v1/users/details"}</td></tr>
 <tr><td>RUNNING TEST: *** getUserPositive ***</td></tr>
+<tr><td>REQUEST: GET User - /waesheroes/api/v1/users/details</td></tr>
+<tr><td>Query params -> username: dev</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> {"id":2,"name":"Zuper Dooper Dev","username":"dev","email":"zd.dev@wearewaes.com","superpower":"Debug a repellent factory storage.","dateOfBirth":"1999-10-10","isAdmin":false}</td></tr>
+<tr><td>RUNNING TEST: *** createNewAdminUserAndGetAllUsers ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 53","dateOfBirth":"2019-10-06","id":0,"isAdmin":true,"email":"newtestuser53@wearewaes.com","superpower":"Henki dama","username":"test-user-53"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":0,"name":"New test user 53","username":"test-user-53","email":"newtestuser53@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":true}</td></tr>
+<tr><td>REQUEST: GET All Users - /waesheroes/api/v1/users/all</td></tr>
+<tr><td>Header -> Authorization: Basic dGVzdC11c2VyLTUzOndhZXN0ZXN0cGFzcw==</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 403</td></tr>
+<tr><td>Body -> {"timestamp":"2019-10-08T20:18:06.829+0000","status":403,"error":"Forbidden","message":"Forbidden","path":"/waesheroes/api/v1/users/all"}</td></tr>
+<tr><td>RUNNING TEST: *** getAllUsersInvalidAuth ***</td></tr>
+<tr><td>REQUEST: GET All Users - /waesheroes/api/v1/users/all</td></tr>
+<tr><td>Header -> Authorization: Basic aW52YWxpZC11c2VyOmludmFsaWQtcGFzcw==</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 401</td></tr>
+<tr><td>Body -> {"timestamp":"2019-10-08T20:18:06.935+0000","status":401,"error":"Unauthorized","message":"Bad credentials","path":"/waesheroes/api/v1/users/all"}</td></tr>
+<tr><td>RUNNING TEST: *** getAllUsersPositive ***</td></tr>
+<tr><td>REQUEST: GET All Users - /waesheroes/api/v1/users/all</td></tr>
+<tr><td>Header -> Authorization: Basic YWRtaW46aGVybw==</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> [{"id":1,"name":"Amazing Admin","username":"admin","email":"a.admin@wearewaes.com","superpower":"Change the course of a waterfall.","dateOfBirth":"1984-09-18","isAdmin":true},{"id":2,"name":"Zuper Dooper Dev","username":"dev","email":"zd.dev@wearewaes.com","superpower":"Debug a repellent factory storage.","dateOfBirth":"1999-10-10","isAdmin":false},{"id":3,"name":"Al Skept-Cal Tester","username":"tester","email":"as.tester@wearewaes.com","superpower":"Voltage AND Current.","dateOfBirth":"2014-07-15","isAdmin":false},{"id":5,"name":"New test user 53","username":"test-user-53","email":"newtestuser53@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":true}]</td></tr>
 <tr><td>RUNNING TEST: *** createUserAndLogin ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 957","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser957@wearewaes.com","superpower":"Henki dama","username":"test-user-957"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":0,"name":"New test user 957","username":"test-user-957","email":"newtestuser957@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
+<tr><td>REQUEST: GET Login - /waesheroes/api/v1/users/access</td></tr>
+<tr><td>Header -> Authorization: Basic dGVzdC11c2VyLTk1Nzp3YWVzdGVzdHBhc3M=</td></tr>
+<tr><td>Query params -> username: test-user-957</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> {"id":6,"name":"New test user 957","username":"test-user-957","email":"newtestuser957@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
 <tr><td>RUNNING TEST: *** getLoginInvalidAuth ***</td></tr>
+<tr><td>REQUEST: GET Login - /waesheroes/api/v1/users/access</td></tr>
+<tr><td>Header -> Authorization: Basic aW52YWxpZC11c2VyOmludmFsaWQtcGFzcw==</td></tr>
+<tr><td>Query params -> username: invalid-user</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 401</td></tr>
+<tr><td>Body -> {"timestamp":"2019-10-08T20:18:07.372+0000","status":401,"error":"Unauthorized","message":"Bad credentials","path":"/waesheroes/api/v1/users/access"}</td></tr>
 <tr><td>RUNNING TEST: *** loginPositive ***</td></tr>
+<tr><td>REQUEST: GET Login - /waesheroes/api/v1/users/access</td></tr>
+<tr><td>Header -> Authorization: Basic dGVzdGVyOm1hbmlhYw==</td></tr>
+<tr><td>Query params -> username: tester</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> {"id":3,"name":"Al Skept-Cal Tester","username":"tester","email":"as.tester@wearewaes.com","superpower":"Voltage AND Current.","dateOfBirth":"2014-07-15","isAdmin":false}</td></tr>
 <tr><td>RUNNING TEST: *** signUpPositive ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_WithId ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyName ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyUsername ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyEmail ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptySuperpower ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyDateOfBirth ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyIsAdmin ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_EmptyPassword ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingName ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingUsername ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingEmail ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingSuperpower ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingDateOfBirth ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingIsAdmin ***</td></tr>
-<tr><td>RUNNING TEST: *** signUpRegressionCases_MissingPassword ***</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 87","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser87@wearewaes.com","superpower":"Henki dama","username":"test-user-87"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":0,"name":"New test user 87","username":"test-user-87","email":"newtestuser87@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
+<tr><td>REQUEST: GET User - /waesheroes/api/v1/users/details</td></tr>
+<tr><td>Query params -> username: test-user-87</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> {"id":7,"name":"New test user 87","username":"test-user-87","email":"newtestuser87@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
+<tr><td>REQUEST: POST Sign up - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New test user 976","dateOfBirth":"2019-10-06","id":0,"isAdmin":false,"email":"newtestuser976@wearewaes.com","superpower":"Henki dama","username":"test-user-976"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 201</td></tr>
+<tr><td>Body -> {"id":0,"name":"New test user 976","username":"test-user-976","email":"newtestuser976@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
+<tr><td>REQUEST: GET User - /waesheroes/api/v1/users/details</td></tr>
+<tr><td>Query params -> username: test-user-976</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> {"id":8,"name":"New test user 976","username":"test-user-976","email":"newtestuser976@wearewaes.com","superpower":"Henki dama","dateOfBirth":"2019-10-06","isAdmin":false}</td></tr>
 <tr><td>RUNNING TEST: *** updateUserPositive ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_WithId ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyName ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyUsername ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyEmail ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptySuperpower ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyDateOfBirth ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyIsAdmin ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_EmptyPassword ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingName ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingUsername ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingEmail ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingSuperpower ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingDateOfBirth ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingIsAdmin ***</td></tr>
-<tr><td>RUNNING TEST: *** updateUserRegressionCases_MissingPassword ***</td></tr>
+<tr><td>REQUEST: PUT User - /waesheroes/api/v1/users</td></tr>
+<tr><td>Header -> Content-Type: application/json</td></tr>
+<tr><td>Header -> Authorization: Basic dGVzdC11c2VyLTk3Njp3YWVzdGVzdHBhc3M=</td></tr>
+<tr><td>Body -> {"password":"waestestpass","name":"New name positive","dateOfBirth":"2018-10-06","id":8,"isAdmin":false,"email":"newtestuser976@wearewaes.com","superpower":"Kaioken","username":"test-user-976"}</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> {"id":8,"name":"New name positive","username":"test-user-976","email":"newtestuser976@wearewaes.com","superpower":"Kaioken","dateOfBirth":"2018-10-06","isAdmin":false}</td></tr>
+<tr><td>REQUEST: GET User - /waesheroes/api/v1/users/details</td></tr>
+<tr><td>Query params -> username: test-user-976</td></tr>
+<tr><td>RESPONSE: </td></tr>
+<tr><td>Code -> 200</td></tr>
+<tr><td>Body -> {"id":8,"name":"New name positive","username":"test-user-976","email":"newtestuser976@wearewaes.com","superpower":"Kaioken","dateOfBirth":"2018-10-06","isAdmin":false}</td></tr>
 </table>

@@ -44,10 +44,10 @@ public class SignUpTest extends TestBase {
      */
     @Test
     public void signUpPositive(){
-        // step 1: Perform POST signup user with valid new-user payload.
+        reportLog("step 1: Perform POST signup user with valid new-user payload.");
         Response res = waesHeroesAPIs.postSignUp(userToCreate.toJson());
 
-        // step 2: Validate user is created successfully, and response code and message is the expected.
+        reportLog("step 2: Validate user is created successfully, and response code and message is the expected.");
         Assert.assertEquals(res.getStatusCode(),201);
 
         JsonPath returnedBody = res.jsonPath();
@@ -58,10 +58,10 @@ public class SignUpTest extends TestBase {
         Assert.assertEquals(returnedBody.get("isAdmin"), userToCreate.isAdmin());
         Assert.assertEquals(returnedBody.get("superpower"), userToCreate.getSuperpower());
 
-        // step 3: Perform GET User call for created user.
+        reportLog("step 3: Perform GET User call for created user.");
         res = waesHeroesAPIs.getUser(userToCreate.getUserName());
 
-        // step 4: Validate user is retrieved successfully.
+        reportLog("step 4: Validate user is retrieved successfully.");
         Assert.assertEquals(res.getStatusCode(),200);
 
         returnedBody = res.jsonPath();
@@ -87,27 +87,36 @@ public class SignUpTest extends TestBase {
      */
     @Test(dataProvider = "signUpData")
     public void signUpRegressionCases(String scenario, JSONObject requestPayload, int expectedCode) throws InterruptedException {
-
-        // step 1: Perform POST sign up call with parametrized payload
+        reportLog("step 1: Perform POST sign up call with parametrized payload");
         Response res = waesHeroesAPIs.postSignUp(requestPayload);
 
-
-        // step 2: Validate response code and message is the expected (if necessary).
+        reportLog("step 2: Validate response code and message is the expected (if necessary).");
         Assert.assertEquals(res.getStatusCode(),expectedCode);
 
         //If we expected to success, validate response payload.
         if(expectedCode==201) {
             JsonPath returnedBody = res.jsonPath();
+
             Assert.assertEquals(returnedBody.get("username"), requestPayload.get("username"));
-            Assert.assertEquals(returnedBody.get("name"), requestPayload.get("name"));
-            Assert.assertEquals(returnedBody.get("email"), requestPayload.get("email"));
-            Assert.assertEquals(returnedBody.get("dateOfBirth"), requestPayload.get("dateOfBirth"));
-            Assert.assertEquals(returnedBody.get("isAdmin"), requestPayload.get("isAdmin"));
-            Assert.assertEquals(returnedBody.get("superpower"), requestPayload.get("superpower"));
+            if(requestPayload.has("name"))
+                Assert.assertEquals(returnedBody.get("name"), requestPayload.getString("name"));
+            if(requestPayload.has("email"))
+                 Assert.assertEquals(returnedBody.get("email"), requestPayload.get("email"));
+            if(requestPayload.has("dateOfBirth"))
+                 Assert.assertEquals(returnedBody.get("dateOfBirth"), requestPayload.get("dateOfBirth").toString().equals("") ? null : requestPayload.get("dateOfBirth"));
+            if(requestPayload.has("isAdmin"))
+                 Assert.assertEquals(returnedBody.get("isAdmin"), requestPayload.get("isAdmin").toString().equals("") ? null : requestPayload.get("isAdmin"));
+            if(requestPayload.has("superpower"))
+                Assert.assertEquals(returnedBody.get("superpower"), requestPayload.get("superpower"));
+        } else if(expectedCode==400) {
+            JsonPath returnedBody = res.jsonPath();
+
+            Assert.assertEquals(returnedBody.get("status"), 400);
+            Assert.assertEquals(returnedBody.get("error"), "Bad Request");
         }
 
         // Realized some calls return 403 very often is there's not at least one second between attempts.
-        Thread.sleep(1000);
+        Thread.sleep(1500);
     }
 
     @DataProvider(name = "signUpData")
@@ -124,8 +133,8 @@ public class SignUpTest extends TestBase {
                       testData[row][col] = retrievedData[row][col];
 
                   if(col > 0 && col < 9){
-                      if(retrievedData[row][col] != "MISSING")
-                          payload.put(WaesUtils.getKeyForIndex(col), retrievedData[row][col]=="EMPTY" ? "" : WaesUtils.getDefaultKeyValue(WaesUtils.getKeyForIndex(col)));
+                      if(!retrievedData[row][col].toString().equals("MISSING"))
+                          payload.put(WaesUtils.getKeyForIndex(col), retrievedData[row][col].toString().equals("EMPTY") ? "" : WaesUtils.getDefaultKeyValue(WaesUtils.getKeyForIndex(col)));
                   }
 
                   if(col == 9) {

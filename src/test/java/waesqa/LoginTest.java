@@ -37,10 +37,10 @@ public class LoginTest extends TestBase {
      */
     @Test
     public void loginPositive(){
-        //step 1: Perform GET login call with existing username and password.
+        reportLog("step 1: Perform GET login call with existing username and password.");
         Response res = waesHeroesAPIs.getLogin(waesProperties.loginUsername, waesProperties.loginPassword);
 
-        //step 1: Validate user logged in succesffully, and response codes and messages are the expected.
+        reportLog("step 1: Validate user logged in succesffully, and response codes and messages are the expected.");
         Assert.assertEquals(res.getStatusCode(),200);
 
         JsonPath returnedBody = res.jsonPath();
@@ -65,7 +65,7 @@ public class LoginTest extends TestBase {
      */
     @Test
     public void createUserAndLogin(){
-        // step 1: Create new user.
+        reportLog("step 1: Create new user.");
         int userNumber = new Random().nextInt(1000);
         User userToCreate = new User();
         userToCreate.withUserName("test-user-" + userNumber)
@@ -77,13 +77,13 @@ public class LoginTest extends TestBase {
                     .withPassword("waestestpass");
         Response res = waesHeroesAPIs.postSignUp(userToCreate.toJson());
 
-        // step 2: Validate user was created successfully
+        reportLog("step 2: Validate user was created successfully");
         Assert.assertEquals(res.getStatusCode(),201);
 
-        // step 3: Perform GET login call with the new user credentials.
+        reportLog("step 3: Perform GET login call with the new user credentials.");
         res = waesHeroesAPIs.getLogin(userToCreate.getUserName(), userToCreate.getPassword());
 
-        // step 4: Validate user logged in successfully, and response codes and messages are the expected.
+        reportLog("step 4: Validate user logged in successfully, and response codes and messages are the expected.");
         Assert.assertEquals(res.getStatusCode(),200);
 
         JsonPath returnedBody = res.jsonPath();
@@ -105,10 +105,10 @@ public class LoginTest extends TestBase {
      */
     @Test
     public void getLoginInvalidAuth(){
-        // step 1: Attempt to login with invalid credentials
+        reportLog("step 1: Attempt to login with invalid credentials");
         Response res = waesHeroesAPIs.getLogin("invalid-user", "invalid-pass");
 
-        // step 2: Validate login fails, and response code and message received is the expected.
+        reportLog("step 2: Validate login fails, and response code and message received is the expected.");
         Assert.assertEquals(res.getStatusCode(),401);
 
         JsonPath returnedBody = new JsonPath(res.asString());
