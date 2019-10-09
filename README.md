@@ -40,6 +40,7 @@ Execution time: ~15 seconds.*
 Execution time: ~1 min.*
 
 3)	RESULTS
+
 Once executed, results are logged in runtime in the console. Besides a report is generated with the details for each test and charts at \target\surfire-reports\ExtentReport.html
 
  
