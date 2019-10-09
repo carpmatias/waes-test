@@ -35,6 +35,12 @@ public class TestBase implements ITest {
         extent = new ExtentReports("target\\surefire-reports\\ExtentReport.html", true);
     }
 
+
+    /**
+     * Set global objects to use in each test class
+     *
+     * @author Matías Cárdenas
+     */
     @BeforeClass
     public void setProperties() throws IOException, InvalidFormatException {
         // properties
@@ -47,6 +53,14 @@ public class TestBase implements ITest {
         dataManager = new TestCasesData();
     }
 
+
+    /**
+     *
+     * Define each test name (specially needed in parametrized tests).
+     *
+     * @author Matías Cárdenas
+     *
+     */
     @BeforeMethod
     public void BeforeMethod(Method method, Object[] testData, ITestContext ctx){
         String testNameStr = "";
@@ -66,6 +80,14 @@ public class TestBase implements ITest {
         reportLog("RUNNING TEST: *** " + testNameStr + " ***");
     }
 
+
+    /**
+     *
+     * Log test result
+     *
+     * @author Matías Cárdenas
+     *
+     */
     @AfterMethod
     public void endTest(ITestResult result){
         if (result.getStatus() == ITestResult.FAILURE) {
