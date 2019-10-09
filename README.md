@@ -7,17 +7,21 @@ test-solution repository for waes-heroes website apis
 REQUIREMENTS
 
 •	Java 8 + JDK
+
 •	Maven
+
 •	backend-for-testers  application provided by Waes, must be running.
 
 
 INSTRUCTIONS
 
 1)	GET SOLUTION
+
 Clone repository
 
 
 2)	EXECUTE TESTS
+
 Tests can be executed grouping 3 different sets of tests. 
 In command line go to project root folder and execute the following, depending on the type of test you want to run:
 
