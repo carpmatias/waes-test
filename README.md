@@ -4,6 +4,13 @@ test-solution repository for waes-heroes website apis
 *Refer to WaesAutomationSolution.pdf file in root folder of repository for more details and documentation of the assignment.
 
 
+REQUIREMENTS
+
+•	Java 8 + JDK
+•	Maven
+•	backend-for-testers  application provided by Waes, must be running.
+
+
 INSTRUCTIONS
 
 1)	GET SOLUTION
